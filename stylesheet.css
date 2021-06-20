@@ -1,0 +1,38 @@
+body {
+  background-color: #000;
+}
+
+hr {
+  margin: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+p {
+  color: white;
+  margin-left: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: grey;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
