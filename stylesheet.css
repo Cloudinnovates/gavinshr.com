@@ -1,38 +1,134 @@
-body {
-  background-color: #000;
+/*
+ * Dynamic & Responsive Resizing + Main Containers
+ */
+
+ body {
+   background-color: #121212; /* Standard dark mode bg 121212 */
+   text-align: center;
+   position: absolute;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   margin: 0;
+   padding: 0;
+ }
+
+* {
+  box-sizing: border-box;
 }
 
-hr {
-  margin: 20px;
+/* The main container for the body content in a given page */
+.container {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgba(0, 140, 186, 0.25); /* 33, 33, 33, 0.5 */
+  padding: 50px;
+  width: 60%;
 }
+
+/* The width is 80%, when the viewport is between 1000px & 800px */
+@media screen and (min-width:800px) and (max-width:1000px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* The width is 100%, when the viewport is 800px or smaller */
+@media screen and (max-width:800px) {
+  .container {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+/*
+ * Typographical Elements
+ */
 
 h1 {
-  margin-left: 20px;
-  font-size: 20px;
-  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  opacity: 0.87;
 }
 
-p {
-  color: white;
-  margin-left: 20px;
+.p-main {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  opacity: 0.87;
 }
 
-/* unvisited link */
-a:link {
-  color: grey;
+/*
+ * Buttons
+ */
+
+/* Animated Arrow Button */
+.button-arrow {
+  border-radius: 12px;
+  background-color: #008CBA;;
+  border: none;
+  padding: 14px 24px;
+  width: 260px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  border: 2px solid #008CBA;
 }
 
-/* visited link */
-a:visited {
-  color: white;
+.button-arrow span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
+.button-arrow span:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
 }
 
-/* selected link */
-a:active {
-  color: red;
+.button-arrow:hover {
+  background-color: #4CAF50;
+  border: 2px solid #FFFFFF;
+}
+
+.button-arrow:hover span {
+  padding-right: 35px;
+}
+
+.button-arrow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*
+ * Starfield
+ */
+
+canvas {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+  background: #000;
 }
