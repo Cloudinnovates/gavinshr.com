@@ -96,8 +96,6 @@ h1 {
   transition: 0.4s;
 }
 
- /* Right Facing Button (default) */
-
 .button-arrow span:after {
   content: '\2192';
   position: absolute;
@@ -119,6 +117,28 @@ h1 {
 .button-arrow:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* Animated Glowing Button */
+.button-glow {
+  border-radius: 12px;
+  background-color: #008CBA;;
+  border: none;
+  padding: 14px 24px;
+  width: 260px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  border: 2px solid #008CBA;
+}
+
+.button-glow:hover {
+  background-color: #4CAF50;
+  border: 2px solid #FFFFFF;
 }
 
 /*
