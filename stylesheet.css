@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 /* The main container for the body content in a given page */
 .container {
   z-index: 1;
@@ -91,6 +95,8 @@ h1 {
   position: relative;
   transition: 0.4s;
 }
+
+ /* Right Facing Button (default) */
 
 .button-arrow span:after {
   content: '\2192';
