@@ -87,6 +87,8 @@ const tick = time => {
   const cy = h/2;
 
   const count = stars.length;
+
+  /* Draw each star */
   for (var i = 0; i < count; i++) {
     const star = stars[i];
 
