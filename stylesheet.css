@@ -33,6 +33,13 @@
   width: 60%;
 }
 
+/* The container for the Medium articles div */
+.medium-container {
+  margin-top: 0px !important;
+  padding-top: 10px !important;
+  background-color: rgba(0, 140, 186, 0.25) !important;
+}
+
 /* The width is 80%, when the viewport is between 1000px & 800px */
 @media screen and (min-width:800px) and (max-width:1000px) {
   .container {
@@ -60,6 +67,14 @@ h1 {
   opacity: 0.87;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 650;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
 .p-main {
   font-size: 24px;
   font-weight: 300;
@@ -75,7 +90,7 @@ h1 {
 /* Animated Arrow Button */
 .button-arrow {
   border-radius: 12px;
-  background-color: #008CBA;;
+  background-color: rgba(0, 140, 186, 0.62);
   border: none;
   padding: 14px 24px;
   width: 260px;
@@ -106,7 +121,7 @@ h1 {
 }
 
 .button-arrow:hover {
-  background-color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.75);
   border: 2px solid #FFFFFF;
 }
 
@@ -122,7 +137,7 @@ h1 {
 /* Animated Glowing Button */
 .button-glow {
   border-radius: 12px;
-  background-color: #008CBA;;
+  background-color: rgba(0, 140, 186, 0.62);
   border: none;
   padding: 14px 24px;
   width: 260px;
@@ -137,7 +152,7 @@ h1 {
 }
 
 .button-glow:hover {
-  background-color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.75);
   border: 2px solid #FFFFFF;
 }
 
@@ -157,4 +172,37 @@ canvas {
   padding: 0;
   margin: 0;
   background: #000;
+}
+
+/*
+ * Medium Articles
+ */
+
+/* Medium article text fields */
+.medium-widget-article__title {
+  color: #FFF !important;
+}
+
+.medium-widget-article__description {
+  color: #FFF !important;
+}
+
+.medium-widget-article__author-name {
+  color: #FFF !important;
+}
+
+.medium-widget-article__like {
+  color: #FFF !important;
+}
+
+.medium-widget-article__clap {
+  color: #FFF !important;
+}
+
+.medium-widget-article__date {
+  color: #FFF !important;
+}
+
+.medium-widget-article__image {
+  opacity: 0.88;
 }

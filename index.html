@@ -32,14 +32,26 @@
 
     <p class="p-main">This site is still under construction.</p>
 
+    <button class="button-arrow" onclick="showWritingPage();"><span>Resume </span></button>
     <button class="button-arrow" onclick="showWritingPage();"><span>Writing </span></button>
     <button class="button-arrow" onclick="window.location.href='https://www.gavinshr.com'"><span>YouTube </span></button>
+    <button class="button-arrow" onclick="window.location.href='https://github.com/gshrdr/'"><span>GitHub </span></button>
 
   </div>
 
   <!-- Writing -->
   <div id="writing" class="container" style="display:none;">
     <include src="Homescreens/Writing/Blog.html"></include>
+  </div>
+
+  <!-- Medium Widget -->
+  <div class="container medium-container">
+    <h2>Medium Articles</h2>
+    <p class="p-main">This is a test paragraph full of temporary information.</p>
+
+    <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@dariusforoux","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
   </div>
 
   <!-- Javascript To Populate Seperate Homescreen HTML Files -->
