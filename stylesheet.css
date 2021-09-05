@@ -33,13 +33,6 @@
   width: 60%;
 }
 
-/* The container for the Medium articles div */
-.medium-container {
-  margin-top: 0px !important;
-  padding-top: 10px !important;
-  background-color: rgba(0, 140, 186, 0.25) !important;
-}
-
 /* The width is 80%, when the viewport is between 1000px & 800px */
 @media screen and (min-width:800px) and (max-width:1000px) {
   .container {
@@ -172,37 +165,4 @@ canvas {
   padding: 0;
   margin: 0;
   background: #000;
-}
-
-/*
- * Medium Articles
- */
-
-/* Medium article text fields */
-.medium-widget-article__title {
-  color: #FFF !important;
-}
-
-.medium-widget-article__description {
-  color: #FFF !important;
-}
-
-.medium-widget-article__author-name {
-  color: #FFF !important;
-}
-
-.medium-widget-article__like {
-  color: #FFF !important;
-}
-
-.medium-widget-article__clap {
-  color: #FFF !important;
-}
-
-.medium-widget-article__date {
-  color: #FFF !important;
-}
-
-.medium-widget-article__image {
-  opacity: 0.88;
 }
