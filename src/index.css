@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width:768px) {
+  section:target{
+    padding-top:70px; /* = to height of navbar */
+    margin-top:-70px;
+  }
+}
