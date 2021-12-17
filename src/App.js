@@ -4,7 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Demos from "./components/Demos";
 import Contact from "./components/Contact";
-import ThreeJS from "./components/ThreeJS";
+import ThreeJS from "./components/ThreeJS/ThreeJS";
 
 export default function App() {
   return (
