@@ -1,4 +1,4 @@
-import { TerminalIcon, CodeIcon, ArrowRightIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon, CodeIcon, ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
@@ -23,9 +23,9 @@ export default function Skills() {
               <div className="h-full bg-gray-800 bg-opacity-40 p-6 rounded">
 
                 <span>
-                  <TerminalIcon className="absolute block w-8 text-blue-400" />
+                  <CheckCircleIcon className="absolute block w-8 text-green-400" />
                   <span className="flex items-center justify-center mb-4">
-                    <span className="pt-2 title-font font-medium text-white">
+                    <span className="pt-1 title-font font-medium text-white">
                       {skill.skill}
                     </span>
                   </span>

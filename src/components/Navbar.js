@@ -21,7 +21,7 @@ export default function Navbar() {
             Contact
           </a>
           <a href="#threeJS" className="mr-5 hover:text-white">
-            3D-JavaScript
+            3D
           </a>
         </nav>
         <a href="https://github.com/gshrdr/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
