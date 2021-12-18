@@ -1,4 +1,4 @@
-import { BadgeCheckIcon, CodeIcon } from "@heroicons/react/solid";
+import { TerminalIcon, CodeIcon, ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
@@ -19,12 +19,33 @@ export default function Skills() {
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
+            <div key={skill.skill} className="p-4 md:w-1/2 w-full">
+              <div className="h-full bg-gray-800 bg-opacity-40 p-6 rounded">
+
+                <span>
+                  <TerminalIcon className="absolute block w-8 text-blue-400" />
+                  <span className="flex items-center justify-center mb-4">
+                    <span className="pt-2 title-font font-medium text-white">
+                      {skill.skill}
+                    </span>
+                  </span>
                 </span>
+
+                <span>
+                  {
+                    skill.moreInfo == null ? <br/> :
+                    <p className="leading-relaxed mb-4">{skill.moreInfo}</p>
+                  }
+                </span>
+                <span className="container mx-auto flex flex-col items-center">
+                  <span className="text-gray-500">
+                    {
+                      skill.url == null ? "" :
+                      <a className="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" href={skill.url}>{skill.urlName}<ArrowRightIcon className="w-4 h-4 ml-1" /></a>
+                    }
+                  </span>
+                </span>
+
               </div>
             </div>
           ))}

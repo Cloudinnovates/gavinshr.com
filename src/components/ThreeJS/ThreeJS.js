@@ -36,10 +36,15 @@ class ThreeJS extends Component {
         <div>
           <div className="container px-5 pt-10 pb-0 mx-auto">
             <div className="text-center mb-20">
-              <CubeIcon className="mx-auto inline-block w-10 mb-0" />
+              <CubeIcon className="mx-auto inline-block w-10 mb-4" />
               <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
                 ThreeJS Experiments
               </h1>
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
+                ipsa delectus eum quo voluptas aspernatur accusantium distinctio
+                possimus est.
+              </p>
             </div>
           </div>
           <div className="container mx-auto flex px-10 pt-0 pb-20 md:flex-row flex-col items-center">

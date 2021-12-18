@@ -1,38 +1,3 @@
-export const projects = [
-  {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
-];
-
 export const testimonials = [
   {
     quote:
@@ -51,10 +16,52 @@ export const testimonials = [
 ];
 
 export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
+  {
+    skill: "Swift (iOS Dev)",
+    url: "https://apps.apple.com/us/developer/gavin-shrader/id1319656496",
+    urlName: "View My Apps",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "HTML",
+    url: "#",
+    urlName: "View Certification",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "CSS",
+    url: "#",
+    urlName: "View Certification",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "JavaScript",
+    url: "#",
+    urlName: "View Certification",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "ReactJS",
+    url: "#",
+    urlName: "View Demo",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "ThreeJS",
+    url: "#",
+    urlName: "View Demo",
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "Git/GitHub",
+    url: null,
+    urlName: null,
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "Unix Terminal",
+    url: null,
+    urlName: null,
+    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
 ];
