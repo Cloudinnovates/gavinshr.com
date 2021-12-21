@@ -58,10 +58,4 @@ export const skills = [
     urlName: null,
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
   },
-  {
-    skill: "Unix Terminal",
-    url: null,
-    urlName: null,
-    moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
-  },
 ];
