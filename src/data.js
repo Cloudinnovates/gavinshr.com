@@ -15,6 +15,23 @@ export const testimonials = [
   },
 ];
 
+export const certifications = [
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Jesse Hicks",
+    url: "...",
+  },
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Jesse Hicks",
+    url: "...",
+  },
+];
+
 export const skills = [
   {
     skill: "Swift (iOS Dev)",
@@ -57,5 +74,11 @@ export const skills = [
     url: null,
     urlName: null,
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
+  },
+  {
+    skill: "Hello World!",
+    url: null,
+    urlName: null,
+    moreInfo: "Testing testing 1 2 3",
   },
 ];

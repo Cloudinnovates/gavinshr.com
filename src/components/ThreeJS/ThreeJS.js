@@ -47,7 +47,7 @@ class ThreeJS extends Component {
               </p>
             </div>
           </div>
-          <div className="container mx-auto flex px-10 pt-0 pb-20 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex px-10 pt-0 pb-20 flex items-center justify-center">
             <div ref={ref => (this.mount = ref)} />
           </div>
         </div>

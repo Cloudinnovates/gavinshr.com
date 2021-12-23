@@ -14,6 +14,9 @@ export default function Navbar() {
           <a href="#skills" className="mr-5 hover:text-white">
             Skills
           </a>
+          <a href="#certifications" className="mr-5 hover:text-white">
+            Certifications
+          </a>
           <a href="#testimonials" className="mr-5 hover:text-white">
             Demos
           </a>
@@ -22,6 +25,9 @@ export default function Navbar() {
           </a>
           <a href="#threeJS" className="mr-5 hover:text-white">
             3D
+          </a>
+          <a href="#blog" className="mr-5 hover:text-white">
+            Blog
           </a>
         </nav>
         <a href="https://github.com/gshrdr/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
