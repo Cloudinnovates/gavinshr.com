@@ -20,14 +20,14 @@ export const certifications = [
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
+    name: "Test 1",
     url: "...",
   },
   {
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
     image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
+    name: "Test 2",
     url: "...",
   },
 ];
@@ -80,5 +80,36 @@ export const skills = [
     url: null,
     urlName: null,
     moreInfo: "Testing testing 1 2 3",
+  },
+];
+
+export const blog = [
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Post 1",
+    url: "...",
+  },
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Post 2",
+    url: "...",
+  },
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Post 3",
+    url: "...",
+  },
+  {
+    text:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Post 4",
+    url: "...",
   },
 ];
