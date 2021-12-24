@@ -22,9 +22,14 @@ html {
   background-color: #111827;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
-.aboveStarfield {
-  z-index: 1;
+.alphaDimmer {
+  position: fixed;
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

@@ -8,12 +8,13 @@ class Starfield extends Component {
     super(props);
     this.animate = this.animate.bind(this);
     this.updateDimensions = this.updateDimensions.bind(this);
+    this.stars = [];
   }
 
   componentDidMount() {
+        // setup window sizing + resizing
         const width = this.mount.clientWidth;
         const height = this.mount.clientHeight;
-
         window.addEventListener("resize", this.updateDimensions);
 
         // scene
@@ -22,14 +23,12 @@ class Starfield extends Component {
 
         // camera
         this.camera = new THREE.PerspectiveCamera(
-            75,
+            45,
             window.innerWidth / window.innerHeight,
-            0.1,
-            50
+            1,
+            1000
         );
-        this.camera.position.z = 15;
-        this.camera.position.x = 0;
-        this.camera.position.y = 0;
+        this.camera.position.z = 5;
 
         // rendering
         this.renderer = new THREE.WebGLRenderer({
@@ -43,15 +42,30 @@ class Starfield extends Component {
         this.renderer.render(this.scene, this.camera);
         this.mount.appendChild(this.renderer.domElement);
 
-        // setup geo
-        const geometry = new THREE.BoxGeometry(5, 5, 5);
-        const material = new THREE.MeshNormalMaterial();
-        const cube = new THREE.Mesh(geometry, material);
-        cube.position.set(0, 0, 0);
-        cube.name = "cube"
-        this.scene.add(cube);
+        // The loop will move from z position of -1000 to z position 1000, adding a random particle at each position.
+        for ( var z= -1000; z < 1000; z+=10 ) {
 
-        this.renderer.render(this.scene, this.camera);
+          // Make a sphere (exactly the same as before).
+          var geometry   = new THREE.SphereGeometry(0.5, 32, 32)
+          var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
+          var sphere = new THREE.Mesh(geometry, material)
+
+          // This time we give the sphere random x and y positions between -500 and 500
+          sphere.position.x = Math.random() * 1000 - 500;
+          sphere.position.y = Math.random() * 1000 - 500;
+
+          // Then set the z position to where it is in the loop (distance of camera)
+          sphere.position.z = z;
+
+          // scale it up a bit
+          sphere.scale.x = sphere.scale.y = 2;
+
+          //add the sphere to the scene
+          this.scene.add( sphere );
+
+          //finally push it to the stars array
+          this.stars.push( sphere );
+        }
 
         this.animate();
     }
@@ -63,10 +77,13 @@ class Starfield extends Component {
 
     animate() {
         requestAnimationFrame(this.animate);
-        const cube = this.scene.getObjectByName("cube");
-        cube.rotation.x += 0.005;
-        cube.rotation.y += 0.005;
-        cube.rotation.z += 0.005;
+
+		    for(var i = 0; i < this.stars.length; i++) {
+          console.log("found star!");
+			    this.stars[i].position.z +=  i/10;
+			    if(this.stars[i].position.z>1000) this.stars[i].position.z-=2000;
+		    }
+
         this.renderer.render(this.scene, this.camera);
     }
 
@@ -86,7 +103,10 @@ class Starfield extends Component {
 
     render() {
         return (
-            <div className="starfield" ref={mount => {this.mount = mount;}}/>
+            <div>
+              <div className="starfield" ref={mount => {this.mount = mount;}}/>
+              <div className="alphaDimmer"/>
+            </div>
         );
     }
 }
