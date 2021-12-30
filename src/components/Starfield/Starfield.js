@@ -23,7 +23,7 @@ class Starfield extends Component {
 
         // camera
         this.camera = new THREE.PerspectiveCamera(
-            85,
+            55,
             window.innerWidth / window.innerHeight,
             1,
             1000
@@ -58,7 +58,7 @@ class Starfield extends Component {
           sphere.position.z = z;
 
           // scale it up a bit
-          sphere.scale.x = sphere.scale.y = 1.75;
+          sphere.scale.x = sphere.scale.y = 1.2;
 
           //add the sphere to the scene
           this.scene.add( sphere );
