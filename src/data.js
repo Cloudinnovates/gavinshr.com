@@ -18,17 +18,19 @@ export const demos = [
 export const certifications = [
   {
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "blank-image.png",
-    name: "Test 1",
-    url: "...",
+      "This course focused on HTML (content layout) and CSS (design). This course taught me modern CSS techniques, best practices for accessibility, web forms, and responsive page layout using CSS Flexbox and Grid to adapt to different screen sizes.",
+    title: "Responsive Web Design",
+    time: "300 hour course (in progress)",
+    company: "FreeCodeCamp",
+    url: "https://www.freecodecamp.org/learn/responsive-web-design/",
   },
   {
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "blank-image.png",
-    name: "Test 2",
-    url: "...",
+      "This course focused on JavaScript in order to make web pages interactive. This course included the fundamentals of JavaScript (variables, arrays, objects, loops, functions, etc.) and then applied this knowledge to build algorithms & data structures.",
+    title: "JavaScript (Algorithms/Data)",
+    time: "300 hour course (in progress)",
+    company: "FreeCodeCamp",
+    url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
   },
 ];
 
