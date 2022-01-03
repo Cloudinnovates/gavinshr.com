@@ -4,7 +4,7 @@ import { demos } from "../data";
 
 export default function Demos() {
   return (
-    <section id="testimonials">
+    <section id="demos">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-10">
           <DesktopComputerIcon className="mx-auto inline-block w-10 mb-4" />

@@ -17,7 +17,7 @@ export default function Navbar() {
           <a href="#certifications" className="mr-5 hover:text-white">
             Certifications
           </a>
-          <a href="#testimonials" className="mr-5 hover:text-white">
+          <a href="#demos" className="mr-5 hover:text-white">
             Demos
           </a>
           <a href="#contact" className="mr-5 hover:text-white">
