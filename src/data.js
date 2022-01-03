@@ -29,14 +29,14 @@ export const skills = [
   },
   {
     skill: "ReactJS",
-    url: "#demos",
+    url: "#projects",
     urlName: "View Demo",
     urlOpensInNewTab: false,
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
   },
   {
     skill: "ThreeJS",
-    url: "#demos",
+    url: "#projects",
     urlName: "View Demo",
     urlOpensInNewTab: false,
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
