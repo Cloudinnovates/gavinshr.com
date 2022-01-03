@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Starfield from "./components/Starfield/Starfield";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Demos from "./components/Demos";
+import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
@@ -17,7 +17,7 @@ export default function App() {
       <About />
       <Skills />
       <Certifications />
-      <Demos />
+      <Projects />
       <Contact />
       <Blog />
       <Acknowledgements />

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10">
+    <header className="bg-gray-800 md:sticky top-0 z-20">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
@@ -17,8 +17,8 @@ export default function Navbar() {
           <a href="#certifications" className="mr-5 hover:text-white">
             Certifications
           </a>
-          <a href="#demos" className="mr-5 hover:text-white">
-            Demos
+          <a href="#projects" className="mr-5 hover:text-white">
+            Projects
           </a>
           <a href="#contact" className="mr-5 hover:text-white">
             Contact
