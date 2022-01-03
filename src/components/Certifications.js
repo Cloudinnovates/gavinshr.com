@@ -40,7 +40,7 @@ export default function Certifications() {
 
                     <span className="container mx-auto flex flex-col items-center pt-2">
                       <span className="text-gray-500">
-                          <a className="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" href={certification.url}>Course Details<ArrowRightIcon className="w-4 h-4 ml-1" /></a>
+                          <a className="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" href={certification.url} target="_blank" rel="noopener noreferrer">Course Details<ArrowRightIcon className="w-4 h-4 ml-1" /></a>
                       </span>
                     </span>
                   </span>

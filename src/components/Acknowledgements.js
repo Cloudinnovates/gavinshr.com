@@ -13,7 +13,7 @@ export default function Acknowledgements() {
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mb-10">
             Resources & assets used to create this website.
           </p>
-          <a href="https://www.vecteezy.com/free-vector/astronaut">Astronaut Vectors by Vecteezy</a>
+          <a href="https://www.vecteezy.com/free-vector/astronaut" target="_blank" rel="noopener noreferrer">Astronaut Vectors by Vecteezy</a>
         </div>
       </div>
     </section>
