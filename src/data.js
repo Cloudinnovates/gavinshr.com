@@ -43,19 +43,19 @@ export const skills = [
   },
   {
     skill: "HTML",
-    url: "#",
+    url: "#certifications",
     urlName: "View Certification",
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
   },
   {
     skill: "CSS",
-    url: "#",
+    url: "#certifications",
     urlName: "View Certification",
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
   },
   {
     skill: "JavaScript",
-    url: "#",
+    url: "#certifications",
     urlName: "View Certification",
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
   },
@@ -76,12 +76,6 @@ export const skills = [
     url: null,
     urlName: null,
     moreInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis?",
-  },
-  {
-    skill: "Hello World!",
-    url: null,
-    urlName: null,
-    moreInfo: "Testing testing 1 2 3",
   },
 ];
 

@@ -1,15 +1,20 @@
 import React from "react";
-import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
+import { TerminalIcon, DesktopComputerIcon } from "@heroicons/react/solid";
 import { demos } from "../data";
 
 export default function Demos() {
   return (
     <section id="testimonials">
       <div className="container px-5 py-10 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4" />
-        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
-          Demos
-        </h1>
+        <div className="text-center mb-10">
+          <DesktopComputerIcon className="mx-auto inline-block w-10 mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+            Demos
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Top 3-5 Demos & URL Link to view full demos page. Full demos page = web development demos first, followed by videos of my old iOS apps/games/designs.
+          </p>
+        </div>
         <div className="flex flex-wrap m-4">
           {demos.map((demo) => (
             <div key={demo.name} className="p-4 md:w-1/2 w-full">
