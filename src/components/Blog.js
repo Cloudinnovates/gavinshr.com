@@ -5,7 +5,7 @@ import { blog } from "../data";
 export default function Blog() {
   return (
     <section id="blog">
-      <div className="container px-5 py-10 mx-auto text-center">
+      <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-10">
           <UsersIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
