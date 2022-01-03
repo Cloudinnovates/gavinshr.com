@@ -13,7 +13,7 @@ export default function Projects() {
             Projects & Demos
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Top 3-5 Demos & URL Link to view full demos page. Full demos page = web development demos first, followed by videos of my old iOS apps/games/designs.
+            Top 3-5 Demos & URL Link to view full demos page. Full demos page = web development demos first, followed by videos of my old iOS apps/games/designs. (Current designs aren't mine, these are placeholders from the original tutorial I used to begin building this website.)
           </p>
         </div>
 
