@@ -10,7 +10,7 @@ export default function About() {
             <br className="hidden lg:inline-block" /> Welcome to my portfolio.
           </h1>
           <p className="mb-8 leading-relaxed">
-            This portfolio is currently under construction. I am building this site using ReactJS, ThreeJS, & HTML/CSS/JavaScript.
+            I am a self taught development looking to begin my career in web development. This portfolio is currently under construction. I am building this site using ReactJS, ThreeJS, & HTML/CSS/JavaScript.
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
