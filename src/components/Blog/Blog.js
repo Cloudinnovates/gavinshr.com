@@ -1,6 +1,6 @@
 import React from "react";
 import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
-import { blog } from "../data";
+import { blog } from "../../data";
 
 export default function Blog() {
   return (

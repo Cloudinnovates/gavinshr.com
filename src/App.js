@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
-import Blog from "./components/Blog";
+import Blog from "./components/Blog/Blog";
 import Acknowledgements from "./components/Acknowledgements";
 
 export default function App() {
@@ -19,7 +19,6 @@ export default function App() {
       <Certifications />
       <Projects />
       <Contact />
-      <Blog />
       <Acknowledgements />
     </main>
   )
