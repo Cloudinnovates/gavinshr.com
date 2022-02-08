@@ -47,7 +47,7 @@ export default function Projects() {
 
           <p style={{ paddingTop: "15px" }}>This website is my ReactJS demo! My portfolio was built using ReactJS with some HTML5, CSS3, and JavaScript.</p>
           <div style={{ paddingTop: "15px"}}>
-            <a className="link" href="https://gavinshr.com">gavinshr.com ReactJS Demo</a>
+            <a className="link" href="https://gavinshr.com">ReactJS Demo - gavinshr.com</a>
             <br/>
             <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
           </div>
