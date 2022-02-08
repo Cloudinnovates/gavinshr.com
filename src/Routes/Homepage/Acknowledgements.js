@@ -7,10 +7,10 @@ export default function Acknowledgements() {
     <div className="container">
       <h1>Acknowledgements</h1>
 
-      <p style={{ paddingTop: "25px" }}>Welcome to the acknowledgements page.</p>
+      <p style={{ paddingTop: "15px" }}>Welcome to the acknowledgements page.</p>
       <div style={{ paddingTop: "15px" }}><Link className="link" to="/">&larr; Homepage</Link></div>
 
-      <p style={{ paddingTop: "25px" }}>Resources & assets that were used to assist in the creation of this site:</p>
+      <p style={{ paddingTop: "15px" }}>Resources & assets that were used to assist in the creation of this site:</p>
       <div style={{ paddingTop: "15px" }}>
         <p><a className="link" href="https://www.freecodecamp.org/news/build-portfolio-website-react/" target="_blank" rel="noopener noreferrer">ReactJS Portfolio Design Inspiration + Tutorial</a></p>
         <p><a className="link" href="https://jfelix.info/blog/create-a-mobile-friendly-navigation-with-react" target="_blank" rel="noopener noreferrer">ReactJS Mobile Friendly Menu Inspiration + Tutorial</a></p>

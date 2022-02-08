@@ -4,7 +4,11 @@ export default function Resume() {
       <hr/>
         <h1>Resume</h1>
 
-        <p style={{ paddingTop: "25px" }}>Include copy of my resume here (update with Brett's final formatting using the full copy of Microsoft word. Remove my email/phone/address from resume and replace with a direct link to my contact form).</p>
+        <p style={{ paddingTop: "15px" }}>This is the most up to date version of my resume. I am continuing to update & improve this with the goal of becoming a software engineer & web developer.</p>
+
+        <div style={{ paddingTop: "15px" }}>
+          <a className="link" href="/Resume.html" target="_blank" rel="noopener noreferrer">View Resume &rarr;</a>
+        </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Skills() {
 
       <div>
         {skills.map((skill) => (
-          <div key={skill.skill} style={{ paddingTop: "25px" }}>
+          <div key={skill.skill} style={{ paddingTop: "15px" }}>
             <span>
               <h2>{skill.skill}</h2>
             </span>
