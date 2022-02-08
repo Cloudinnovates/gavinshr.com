@@ -13,7 +13,7 @@ export default function Projects() {
         <br/>
         <div style={{ paddingBottom: "2rem" }}>
           <h2>Maze Generation & Solving Algorithm</h2>
-          <h3 style={{ color: "red" }}><i>Work In Progress</i></h3>
+          <h3><i>Work In Progress</i></h3>
           <br/>
 
           <img
@@ -61,21 +61,21 @@ export default function Projects() {
             <div>
               <a className="link" href="/3D-Test/index.html">3D Test #1 - Cube</a>
               <br/>
-              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com/tree/main/public/3D-Test" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
               <br/>
             </div>
 
             <div style={{ paddingTop: 15 }}>
               <a className="link" href="/3D-Test-2-Orbital/index.html">3D Test #2 - Camera + Animation</a>
               <br/>
-              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com/tree/main/public/3D-Test-2-Orbital" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
               <br/>
             </div>
 
             <div style={{ paddingTop: 15 }}>
               <a className="link" href="/3D-Test-3-Spheres/index.html">3D Test #3 - Multiple Objects</a>
               <br/>
-              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com/tree/main/public/3D-Test-3-Spheres" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
             </div>
           </div>
         </div>
