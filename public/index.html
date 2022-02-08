@@ -5,11 +5,13 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Cache-control" content="public"> <!-- https://stackoverflow.com/questions/4480304/how-to-set-http-headers-for-cache-control -->
     <meta
       name="description"
-      content="My portfolio app created with React"
+      content="Gavin Shrader's resume & portfolio website."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,12 +26,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>My Portfolio</title>
+    <title>gavinshr.com</title>
   </head>
   <body>
-
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" class="root-container"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

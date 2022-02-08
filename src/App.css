@@ -1,0 +1,278 @@
+/*
+ * Navigation Bar Container
+ */
+
+ .navWrapper {
+   display: flex;
+   position: fixed;
+   width: 100%;
+   z-index: 2;
+ }
+
+.navigation {
+  z-index: 3;
+  flex: 1;
+  align-self: flex-start;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #1f2937;
+  border-bottom: 2px solid #374151;
+}
+
+/*
+ * Navigation Bar Header
+ */
+
+.logo {
+  padding: 0.5rem 1rem;
+}
+
+/*
+ * Navigation Bar Link
+ */
+
+.navLink {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #cbd5e1;
+    transition:color .15s ease-in-out
+ }
+
+.navLink:after {
+    transform: translateY(-150%);
+    opacity: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 2px;
+    transition: transform .15s ease-in-out, opacity .15s ease-in-out;
+    background-color: #60a5fa;
+    content: "";
+ }
+
+.navLink:active, .navLink:hover {
+    color: #60a5fa;
+}
+
+.navLink:active:after, .navLink:hover:after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*
+ * Navigation Bar Items List
+ */
+
+.navUl {
+  display: flex;
+  list-style: none;
+  font-weight: 350;
+  background-color: #1f2937;
+}
+
+.navUlLi {
+  padding: 0 0.8rem;
+  cursor: pointer;
+}
+
+.liBottom {
+  position: fixed;
+  bottom: 1rem;
+  display: none;
+}
+
+.liExitButton {
+  /* Set font to match default font across site */
+  font-size: 62.5%; /*1rem = 10px*/
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+
+  /* Remove default button styling */
+  border: none;
+  background: transparent;
+  outline: none;
+
+  cursor: pointer;
+}
+
+/*
+ * Navigation Bar Menu States
+ */
+
+.navListOpen {}
+
+.navListClosed {}
+
+.navListClosedNoTransition {}
+
+/*
+ * Hamburger Menu Button
+ */
+
+.hamburgerButton {
+  height: 3rem;
+  width: 2.5rem;
+  position: relative;
+  font-size: 12px;
+
+  display: none;
+
+  /* Remove default button styles */
+  border: none;
+  background: transparent;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.hamburgerButton:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  top: -25%;
+  left: -25%;
+}
+
+.hamburgerLines {
+  top: 50%;
+  margin-top: -0.125em;
+
+  /* Create middle line */
+  height: 2px;
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #cbd5e1;
+  position: absolute;
+}
+
+.hamburgerLines:after {
+  /* Create + move bottom line below center line */
+  height: 2px;
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #cbd5e1;
+  position: absolute;
+
+  top: -0.8rem;
+}
+
+.hamburgerLines:before {
+  /* Create + move top line on top of center line */
+  height: 2px;
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #cbd5e1;
+  position: absolute;
+
+  top: 0.8rem;
+}
+
+/*
+ * Handle screen resizing for hamburger menu
+ */
+
+@media only screen and (max-width: 700px) {
+  .navUl {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+    border-left: 2px solid #374151;
+
+    transform: translateX(100%);
+  }
+
+  .navUlLi {
+    padding: 1rem 1rem;
+  }
+
+  .liBottom {
+    display: block;
+  }
+
+  .navListOpen {
+    transition: 0.2s ease-out;
+    transform: translateX(0);
+  }
+
+  .navListClosed {
+    transition: 0.2s ease-out;
+    transform: translateX(100%);
+  }
+
+  .navListClosedNoTransition {
+    transform: translateX(100%);
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
+}
+
+/*
+ * Hamburger menu screen alpha-opacity dimming overlay
+ */
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+
+.overlayShown {
+  display: block;
+}
+
+.overlayHidden {
+  display: none;
+}
+
+ /*
+  * Project Page Images
+  */
+
+.projectImage {
+  border: 2px solid #9ca3af;
+  width: 426px;
+  height: 193px;
+}
+
+/* Shrink image for tiny screen sizes */
+@media only screen and (max-width: 500px) {
+  .projectImage {
+    width: 320px;
+    height: 145px;
+  }
+}
+
+/* Shrink image for tinier screen sizes */
+@media only screen and (max-width: 320px) {
+  .projectImage {
+    width: 160px;
+    height: 72px;
+  }
+}

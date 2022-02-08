@@ -1,36 +1,142 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  color-scheme: dark;
+}
 
-body {
-  background-color: #000;
+.root-container {
+  margin: 0;
+  height: 100%;
+}
+
+.main-screen-fill {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
+  font-size: 62.5%; /*1rem = 10px*/
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding: 80px;
+  width: 100vw;
+  margin: 0;
+  height: 100%;
 }
 
-@media (min-width:768px) {
-  section:target{
-    padding-top:70px; /* = to height of navbar */
-    margin-top:-70px;
+body {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+main {
+  z-index: 1;
+  background-color: transparent;
+  color: #d1d5db;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 80px;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  bottom: 0;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+}
+
+hr {
+  border: 1px solid #374151;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link {
+  color: #60a5fa;
+}
+
+.link:hover {
+  color: #1d4ed8;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * Main application background starfield animation component container
+ */
+
+ .backgroundFixed {
+   z-index: -1;
+   position: fixed;
+   width: 100vw;
+   height: 100%;
+   background-color: #111827;
+   opacity: 0.95; /* Main body bg color = black, so making this bg less opaque makes it slightly darker, so the starfield pops more */
+ }
+
+
+/*
+ * Main Application Media Queries
+ */
+
+/* Handle small screen sizes */
+@media screen and (min-width: 800px) {
+  html {
+    scroll-padding: 100px;
+  }
+
+  main {
+    padding: 10rem;
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 90%;
   }
 }
 
-.starfield {
-  position: fixed;
-  background-color: #111827;
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
+/* Handle medium screen sizes */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
 }
 
-.alphaDimmer {
-  position: fixed;
-  background-color: #111827;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+/* Handle large screen sizes */
+@media screen and (min-width: 1750px) {
+  .container {
+    width: 70%;
+  }
 }
