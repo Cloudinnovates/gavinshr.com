@@ -13,7 +13,7 @@ export default function Projects() {
         <br/>
         <div style={{ paddingBottom: "2rem" }}>
           <h2>Maze Generation & Solving Algorithm</h2>
-          <h3><i>Work In Progress</i></h3>
+          <h3 style={{ color: "red" }}><i>Work In Progress</i></h3>
           <br/>
 
           <img
@@ -34,8 +34,16 @@ export default function Projects() {
         <div style={{ paddingBottom: "2rem" }}>
           <h2>ReactJS Demo</h2>
           <h3><i>Advanced Front-End JavaScript Framework</i></h3>
+          <br/>
 
-          <p style={{ paddingTop: 20 }}>This website is my ReactJS demo! My portfolio is built using React with some Vanilla HTML5, CSS3, and JavaScript.</p>
+          <img
+            className="projectImage"
+            src={require("./DemoImages/PortfolioDemo.png")}
+            alt="gavinshr.com Portfolio Screenshot"
+          />
+          <br/>
+
+          <p style={{ paddingTop: 20 }}>This website is my ReactJS demo! My portfolio is built using ReactJS with some HTML5, CSS3, and JavaScript.</p>
           <a className="link" href="https://gavinshr.com">gavinshr.com ReactJS Demo</a>
           <br/>
           <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
@@ -47,7 +55,29 @@ export default function Projects() {
           <h2>ThreeJS Demo</h2>
           <h3><i>3D Rendering With JavaScript</i></h3>
 
-          <p style={{ paddingTop: 20 }}>3D Rendering Demo Project. ** Include ThreeJS Demo Projects from gavinshr.com Static page **</p>
+          <p style={{ paddingTop: 20 }}>These are a few simple projects that I built using the excellent resources at: <a className="link" href="https://discoverthreejs.com" target="_blank" rel="noopener noreferrer">DiscoverThreeJS.com</a></p>
+
+          <div style={{ paddingTop: 15 }}>
+            <div>
+              <a className="link" href="/3D-Test/index.html">3D Test #1 - Cube</a>
+              <br/>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+              <br/>
+            </div>
+
+            <div style={{ paddingTop: 15 }}>
+              <a className="link" href="/3D-Test-2-Orbital/index.html">3D Test #2 - Camera + Animation</a>
+              <br/>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+              <br/>
+            </div>
+
+            <div style={{ paddingTop: 15 }}>
+              <a className="link" href="/3D-Test-3-Spheres/index.html">3D Test #3 - Multiple Objects</a>
+              <br/>
+              <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+            </div>
+          </div>
         </div>
       </div>
 
