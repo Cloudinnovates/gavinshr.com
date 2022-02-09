@@ -9,7 +9,7 @@ import ScrollToTop from "./Utils/ScrollToTop"
 import "./index.css"
 import App from "./App"
 import Homepage from "./Routes/Homepage/Homepage"
-import Acknowledgements from "./Routes/Homepage/Acknowledgements"
+import Resources from "./Routes/Homepage/Resources"
 import Blog from "./Routes/Blog/Blog"
 import Projects from "./Routes/Projects/Projects"
 
@@ -22,7 +22,7 @@ render(
           <Route index element={<Homepage />} />
           <Route path="blog" element={<Blog />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="acknowledgements" element={<Acknowledgements />} />
+          <Route path="resources" element={<Resources />} />
           <Route
             path="*"
             element={

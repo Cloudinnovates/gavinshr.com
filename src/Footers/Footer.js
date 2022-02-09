@@ -21,7 +21,7 @@ export default function Footer() {
         <div style={{ display: "flex", flexDirection: "row", paddingTop: "15px" }}>
           <HashLink className="link" smooth to="/#home">Top Of Page</HashLink>
           <div style={{ width: "10px" }}></div>
-          <HashLink className="link" smooth to="/acknowledgements">Acknowledgements</HashLink>
+          <HashLink className="link" smooth to="/resources">Resources</HashLink>
         </div>
 
         <div className="footer-bottom">
