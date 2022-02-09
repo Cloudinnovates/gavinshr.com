@@ -33,6 +33,11 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   } else {
     $message = $_POST['message'];
   }
+  if (empty($_POST['name'])) {
+    $errors[] = 'Name is empty';
+  } else {
+    $name = $_POST['name'];
+  }
 
   // Create + send the email
   if (empty($errors)) {
@@ -47,6 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     <body style=\"background-color:#fafafa;\">
     <div style=\"padding:20px;\">
     Date: <span style=\"color:#888\">$date</span>
+    <br>
+    Name: <span style=\"color:#888\">$name</span>
     <br>
     Email: <span style=\"color:#888\">$email</span>
     <br>
@@ -96,9 +103,10 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $email_message .= "Message: ".$message."\n\n";
 
     // create email headers
+    $reply_to = 'shrader.gavin@gmail.com';
 
-    $headers = 'From: '.$to."\r\n".
-    'Reply-To: '.$to."\r\n" .
+    $headers = 'From: Contact Form <contact@gavinshr.com>'."\r\n".
+    'Reply-To: '.$reply_to."\r\n" .
     "MIME-Version: 1.0\r\n" .
     "Content-Type: text/plain; charset=iso-8859-1\r\n";
 
