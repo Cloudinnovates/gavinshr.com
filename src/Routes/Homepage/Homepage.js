@@ -11,19 +11,19 @@ export default function Homepage() {
         <div className="container">
           <About />
 
-          <div style={{ width: "100%", height: "100px" }}/>
+          <div style={{ width: "100%", height: "110px" }}/>
 
           <Skills />
 
-          <div style={{ width: "100%", height: "75px" }}/> {/* Height of spacer is 25px less than others to account for 25px margin-bottom of skills list items */}
+          <div style={{ width: "100%", height: "85px" }}/> {/* Height of spacer is 25px less than others to account for 25px margin-bottom of skills list items */}
 
           <Resume />
 
-          <div style={{ width: "100%", height: "100px" }}/>
+          <div style={{ width: "100%", height: "110px" }}/>
 
           <Contact />
 
-          <div style={{ width: "100%", height: "150px" }}/>
+          <div style={{ width: "100%", height: "155px" }}/>
 
         </div>
       </main>

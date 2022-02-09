@@ -1,0 +1,25 @@
+.project-image-container {
+  padding-top: 15px;
+}
+
+.project-image {
+  border: 2px solid #9ca3af;
+  width: 426px;
+  height: 193px;
+}
+
+/* Shrink image for tiny screen sizes */
+@media only screen and (max-width: 500px) {
+  .project-image {
+    width: 320px;
+    height: 145px;
+  }
+}
+
+/* Shrink image for tinier screen sizes */
+@media only screen and (max-width: 320px) {
+  .project-image {
+    width: 160px;
+    height: 72px;
+  }
+}

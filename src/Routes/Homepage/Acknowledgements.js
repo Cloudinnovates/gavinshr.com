@@ -7,7 +7,7 @@ export default function Acknowledgements() {
     <div className="container">
       <h1>Acknowledgements</h1>
 
-      <p style={{ paddingTop: "15px" }}>Welcome to the acknowledgements page.</p>
+      <p style={{ paddingTop: "25px" }}>Welcome to the acknowledgements page.</p>
       <div style={{ paddingTop: "15px" }}><Link className="link" to="/">&larr; Homepage</Link></div>
 
       <p style={{ paddingTop: "15px" }}>Resources & assets that were used to assist in the creation of this site:</p>

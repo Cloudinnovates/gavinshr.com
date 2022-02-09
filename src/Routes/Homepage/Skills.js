@@ -6,6 +6,7 @@ export default function Skills() {
   return (
     <div id="skills">
       <div className="center">
+        <i className="fa fa-code fa-2x"></i>
         <h1>Skills</h1>
         <div className="skills-container">
           {skills.map((skill) => (

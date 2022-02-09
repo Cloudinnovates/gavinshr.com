@@ -250,29 +250,3 @@
 .overlayHidden {
   display: none;
 }
-
- /*
-  * Project Page Images
-  */
-
-.projectImage {
-  border: 2px solid #9ca3af;
-  width: 426px;
-  height: 193px;
-}
-
-/* Shrink image for tiny screen sizes */
-@media only screen and (max-width: 500px) {
-  .projectImage {
-    width: 320px;
-    height: 145px;
-  }
-}
-
-/* Shrink image for tinier screen sizes */
-@media only screen and (max-width: 320px) {
-  .projectImage {
-    width: 160px;
-    height: 72px;
-  }
-}

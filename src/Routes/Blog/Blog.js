@@ -7,7 +7,7 @@ export default function Blog() {
       <div className="container">
         <h1>Blog</h1>
 
-        <p style={{ paddingTop: "15px" }}>Welcome to the blog page.</p>
+        <p style={{ paddingTop: "25px" }}>Welcome to the blog page.</p>
         <div style={{ paddingTop: "15px" }}><Link className="link" to="/">&larr; Homepage</Link></div>
 
         <p style={{ paddingTop: "15px" }}>Hide the starfield on the blog page - animate in/out a background cover open page navigation (?) -- Or potentially just have a list of blog posts and when you click to read the post it brings you to a new screen with a solid background-color and no starfield.</p>
