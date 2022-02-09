@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.center-text-about-me {
+  text-align: center;
+}
+
 .about h2 {
   padding-top: 10px;
   font-size: 25px;
@@ -43,6 +47,10 @@
 
     .about .container .container-half-width {
        width: 50%;
+    }
+
+    .center-text-about-me {
+      text-align: left;
     }
 }
 

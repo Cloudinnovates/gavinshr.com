@@ -93,6 +93,10 @@ hr {
   justify-content: center;
 }
 
+.center-text {
+  text-align: center;
+}
+
 /*
  * Main application background starfield animation component container
  */

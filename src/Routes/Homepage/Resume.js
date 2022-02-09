@@ -1,7 +1,7 @@
 export default function Resume() {
   return (
     <div id="resume">
-      <div className="center">
+      <div className="center center-text">
         <i className="fa fa-file-text fa-2x"></i>
         <h1>Resume</h1>
 

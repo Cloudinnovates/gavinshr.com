@@ -15,7 +15,7 @@ class Contact extends Component {
     return (
       <div id="contact">
 
-        <div className="center">
+        <div className="center center-text">
           <i className="fa fa-envelope fa-2x"></i>
           <h1>Contact</h1>
 

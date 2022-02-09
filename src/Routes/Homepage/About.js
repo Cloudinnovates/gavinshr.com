@@ -2,7 +2,7 @@ import "./About.css"
 
 export default function About() {
   return (
-    <div className="center">
+    <div className="center center-text-about-me">
       <div className="about">
         <div className="center">
           <div style={{ textAlign: "center" }}>
