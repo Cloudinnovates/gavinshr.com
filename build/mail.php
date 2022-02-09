@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     ";
 
     // Send email
-    $headers = 	'From: Contact Form <contact@gavinshr.com>' . "\r\n" .
+    $headers = 	'From: contact@gavinshr.com' . "\r\n" .
     "Reply-To: $email" . "\r\n" .
     "MIME-Version: 1.0\r\n" .
     "Content-Type: text/html; charset=iso-8859-1\r\n";
@@ -105,8 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     // create email headers
     $reply_to = 'shrader.gavin@gmail.com';
 
-    $headers = 'From: Contact Form <contact@gavinshr.com>'."\r\n".
-    'Reply-To: '.$reply_to."\r\n" .
+    $headers = 'From: contact@gavinshr.com'."\r\n".
     "MIME-Version: 1.0\r\n" .
     "Content-Type: text/plain; charset=iso-8859-1\r\n";
 

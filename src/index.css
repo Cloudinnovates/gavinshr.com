@@ -103,7 +103,7 @@ hr {
    width: 100vw;
    height: 100%;
    background-color: #111827;
-   opacity: 0.95; /* Main body bg color = black, so making this bg less opaque makes it slightly darker, so the starfield pops more */
+   opacity: 1; /* Main body bg color = black, so making this bg less opaque makes it slightly darker, so the starfield pops more */
  }
 
 
