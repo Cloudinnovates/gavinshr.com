@@ -1,7 +1,6 @@
 export default function Resume() {
   return (
     <div id="resume">
-      <hr/>
       <div className="center">
         <h1>Resume</h1>
 

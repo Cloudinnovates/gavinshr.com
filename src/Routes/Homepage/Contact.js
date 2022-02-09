@@ -14,12 +14,12 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact">
-        <hr/>
 
         <div className="center">
           <h1>Contact</h1>
 
-          <p style={{ paddingTop: "15px" }}>If you would like to contact me you can submit an inquiry via this form. Upon submission you will receive a confirmation email (this may be sent to your spam folder). I will reply as quickly as possible. Thank you!</p>
+          <p style={{ paddingTop: "15px" }}>If you would like to contact me you can submit an inquiry via this form. Upon submission you will receive a confirmation email (this may be sent to your spam folder).</p>
+          <p style={{ paddingTop: "15px" }}>I will reply as quickly as possible. Thank you!</p>
         </div>
 
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
