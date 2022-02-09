@@ -5,7 +5,8 @@ export default function Projects() {
   return (
     <main>
       <div className="container">
-        <h1>Projects</h1>
+        <i className="fa fa-bolt fa-2x" style={{ display: "inline-block", marginRight: "10px" }}></i>
+        <h1 style={{ display: "inline-block" }}>Projects</h1>
 
         <p style={{ paddingTop: "25px" }}>Welcome to the projects page.</p>
         <div style={{ paddingTop: "15px", paddingBottom: "2rem" }}><Link className="link" to="/">&larr; Homepage</Link></div>

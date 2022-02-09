@@ -5,7 +5,8 @@ export default function Blog() {
   return (
     <main>
       <div className="container">
-        <h1>Blog</h1>
+        <i className="fa fa-book fa-2x" style={{ display: "inline-block", marginRight: "10px" }}></i>
+        <h1 style={{ display: "inline-block" }}>Blog</h1>
 
         <p style={{ paddingTop: "25px" }}>Welcome to the blog page.</p>
         <div style={{ paddingTop: "15px" }}><Link className="link" to="/">&larr; Homepage</Link></div>
