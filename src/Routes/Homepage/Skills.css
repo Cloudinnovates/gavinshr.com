@@ -1,0 +1,16 @@
+.skills-container {
+  padding-top: 15px;
+}
+
+.skills-item {
+  padding: 20px;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  max-width: 1000px;
+  background-color: #1f2937;
+  border: 2px solid #374151;
+}
+
+.skills-item-subsection {
+  padding-top: 5px;
+}

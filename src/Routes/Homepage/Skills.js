@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom"
 import { skills } from "../../data";
+import "./Skills.css"
 
 export default function Skills() {
   return (
     <div id="skills">
       <div className="center">
         <h1>Skills</h1>
-        <div style={{ paddingTop: "15px" }}>
+        <div className="skills-container">
           {skills.map((skill) => (
-            <div key={skill.skill} style={{ maxWidth: "1000px", paddingTop: "20px", padding: "20px", marginBottom: "25px", backgroundColor: "#1f2937", border: "2px solid #374151" }}>
+            <div key={skill.skill} className="skills-item">
               <span>
                 <h2>{skill.skill}</h2>
               </span>
@@ -16,11 +17,11 @@ export default function Skills() {
               <span>
                 {
                   skill.moreInfo == null ? <br/> :
-                  <p style={{ paddingTop: "5px" }}>{skill.moreInfo}</p>
+                  <p className="skills-item-subsection">{skill.moreInfo}</p>
                 }
               </span>
               <span>
-                <div style={{ paddingTop: "5px" }}>
+                <div className="skills-item-subsection">
                 {
                   skill.url == null ? ""
                   :
