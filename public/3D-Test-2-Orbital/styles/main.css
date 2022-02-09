@@ -22,11 +22,6 @@ h1 {
 }
 
 button {
-  z-index: 1;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-
   background-color: #4CAF50;
   border: 2px solid #4CAF50;
   color: white;
@@ -55,4 +50,20 @@ button:hover {
     background to prevent flashing on load
   */
   background-color: skyblue;
+}
+
+.threeJS-center {
+  /* position the heading */
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+
+  /* make sure that the heading is drawn on top */
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
