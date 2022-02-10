@@ -97,8 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   <?php endif; ?>
 
   <?php
-    $email_subject = "Submission was successful";
-    $email_message = "Form details\n\n";
+    $email_subject = "Submission Was Successful";
+    $email_message = "I received the following information from your contact submission:\n\n";
     $email_message .= "Name: ".$name."\n\n";
     $email_message .= "Email: ".$email."\n\n";
     $email_message .= "Message: ".$message."\n\n";
