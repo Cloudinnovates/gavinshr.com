@@ -1,6 +1,7 @@
 <?php
 // Source: https://mailtrap.io/blog/react-contact-form/
 // Start PHP server on different port: navigate to project directory >> php -S localhost:3002 mail.php
+// PHP Kinda sucks... but my hosting is dirt cheap so I'm not running a Node.JS environment yet, so I'm stuck with PHP for now!
 
 // Allow for asynchonroucs calls from browser to backend
 header("Access-Control-Allow-Origin: *");
@@ -96,8 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   <?php endif; ?>
 
   <?php
-    $email_subject = "Submission was successful";
-    $email_message = "Form details\n\n";
+    $email_subject = "Submission Was Successful";
+    $email_message = "Thank you for contacting me! I will reply as quickly as possible.\n\n";
+    $email_message .= "I received the following information from your contact submission:\n\n";
     $email_message .= "Name: ".$name."\n\n";
     $email_message .= "Email: ".$email."\n\n";
     $email_message .= "Message: ".$message."\n\n";

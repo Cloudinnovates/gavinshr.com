@@ -86,6 +86,11 @@ hr {
   width: 100%;
 }
 
+/* Add top padding for all screens other than home page */
+.subscreen-container {
+  padding-top: 15px;
+}
+
 .center {
   display: flex;
   flex-direction: column;

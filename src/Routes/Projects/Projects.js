@@ -4,7 +4,7 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <main>
-      <div className="container">
+      <div className="container subscreen-container">
         <i className="fa fa-code fa-2x" style={{ display: "inline-block", marginRight: "10px" }}></i>
         <h1 style={{ display: "inline-block" }}>Projects</h1>
 

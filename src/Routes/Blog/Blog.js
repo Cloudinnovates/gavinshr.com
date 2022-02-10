@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Blog() {
   return (
     <main>
-      <div className="container">
+      <div className="container subscreen-container">
         <i className="fa fa-book fa-2x" style={{ display: "inline-block", marginRight: "10px" }}></i>
         <h1 style={{ display: "inline-block" }}>Blog</h1>
 
