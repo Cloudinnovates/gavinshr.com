@@ -14,30 +14,6 @@ export default function Projects() {
         <hr/>
         <br/>
         <div style={{ paddingBottom: "2rem" }}>
-          <h2>Maze Generation & Solving Algorithm</h2>
-          <h3><i>Work In Progress</i></h3>
-          <br/>
-
-          <div className="project-image-container">
-            <img
-              className="project-image"
-              src={require("./DemoImages/EvolutionDemo.png")}
-              alt="Maze Algorithm Project Screenshot"
-            />
-          </div>
-          <br/>
-
-          <p style={{ paddingTop: "15px" }}>HTML/CSS/JavaScript Maze generation & solving program with JavaScript algorithm.</p>
-          <div style={{ paddingTop: "15px"}}>
-            <a className="link" href="/MazeAlgorithm/index.html">Maze Algorithm Code Demo</a>
-            <br/>
-            <a className="link" href="https://github.com/gshrdr/MazeAlgorithm" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
-          </div>
-        </div>
-
-        <hr/>
-        <br/>
-        <div style={{ paddingBottom: "2rem" }}>
           <h2>ReactJS Demo</h2>
           <h3><i>Advanced Front-End JavaScript Framework</i></h3>
           <br/>
@@ -56,6 +32,31 @@ export default function Projects() {
             <a className="link" href="https://gavinshr.com">ReactJS Demo - gavinshr.com</a>
             <br/>
             <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+          </div>
+        </div>
+
+        <hr/>
+        <br/>
+        <div style={{ paddingBottom: "2rem" }}>
+          <h2>Maze Generation & Solving Algorithm</h2>
+          <h3><i>HTML5, CSS3, & JavaScript Demo</i></h3>
+          <p><i>Work In Progress</i></p>
+          <br/>
+
+          <div className="project-image-container">
+            <img
+              className="project-image"
+              src={require("./DemoImages/EvolutionDemo.png")}
+              alt="Maze Algorithm Project Screenshot"
+            />
+          </div>
+          <br/>
+
+          <p style={{ paddingTop: "15px" }}>HTML/CSS/JavaScript Maze generation & solving program with JavaScript algorithm.</p>
+          <div style={{ paddingTop: "15px"}}>
+            <a className="link" href="/MazeAlgorithm/index.html">Maze Algorithm Code Demo</a>
+            <br/>
+            <a className="link" href="https://github.com/gshrdr/MazeAlgorithm" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
           </div>
         </div>
 
