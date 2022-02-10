@@ -98,7 +98,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
   <?php
     $email_subject = "Submission Was Successful";
-    $email_message = "I received the following information from your contact submission:\n\n";
+    $email_message = "Thank you for contacting me! I will reply as quickly as possible.\n\n";
+    $email_message .= "I received the following information from your contact submission:\n\n";
     $email_message .= "Name: ".$name."\n\n";
     $email_message .= "Email: ".$email."\n\n";
     $email_message .= "Message: ".$message."\n\n";
