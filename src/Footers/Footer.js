@@ -7,14 +7,13 @@ export default function Footer() {
     <footer>
       <div className="footer-content">
         <p>This website was coded using HTML, CSS, JavaScript, and ReactJS; it is a work in progress and will continue to be updated. Thank you for viewing my site, any feedback is appreciated!</p>
-        <p style={{ paddingTop: "15px" }}>Contact, Blog, GitHub, Twitter & YouTube:</p>
-        <p><i>Blog, Twitter & YouTube Are Unfinished.</i></p>
+        <p style={{ paddingTop: "15px" }}>Contact, Blog, GitHub & YouTube:</p>
+        <p><i>Blog & YouTube In Progress.</i></p>
 
         <ul className="socials">
           <li><HashLink className="footer-navLink" smooth to="/#contact"><i className="fa fa-envelope-o"></i></HashLink></li>
           <li><NavLink className="footer-navLink" to="/blog"><i className="fa fa-newspaper-o"></i></NavLink></li>
           <li><a className="footer-navLink" href="https://github.com/gshrdr/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
-          <li><a className="footer-navLink" href="https://twitter.com/gshrdr" target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter"></i></a></li>
           <li><a className="footer-navLink" href="https://www.youtube.com/channel/UC9DsBMXe9AgzTIh_OuBt2sw" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></li>
         </ul>
 
