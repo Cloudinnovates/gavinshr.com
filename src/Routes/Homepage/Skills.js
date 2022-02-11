@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 import { skills } from "../../data";
 import "./Skills.css"
 
@@ -33,10 +34,13 @@ export default function Skills() {
                     skill.urlIsNavLink === true ?
                       <NavLink className="link" to={skill.url}>{skill.urlName}</NavLink>
                       :
-                        skill.urlOpensInNewTab === true ?
-                          <a className="link" href={skill.url} target="_blank" rel="noopener noreferrer">{skill.urlName}</a>
+                        skill.urlIsHashLink === true ?
+                          <HashLink className="link" to={skill.url}>{skill.urlName}</HashLink>
                           :
-                          <a className="link" href={skill.url}>{skill.urlName}</a>
+                          skill.urlOpensInNewTab === true ?
+                            <a className="link" href={skill.url} target="_blank" rel="noopener noreferrer">{skill.urlName}</a>
+                            :
+                            <a className="link" href={skill.url}>{skill.urlName}</a>
                 }
                 </div>
               </span>
