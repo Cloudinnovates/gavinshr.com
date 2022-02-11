@@ -40,4 +40,4 @@ npm run build
 I personally use BlueHost for my hosting & CyberDuck for my FTP connection to the host. Your results may vary if you use a different configuration.
 
 ## Want to create a website with a similar theme?
-Check out the resources/assets I used: [gavinshr.com/acknowledgements](https://gavinshr.com/acknowledgements)
+Check out the resources/assets I used: [gavinshr.com/resources](https://gavinshr.com/resources)
