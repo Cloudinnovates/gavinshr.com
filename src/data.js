@@ -51,7 +51,7 @@ export const skills = [
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
     urlIsNavLink: true,
-    moreInfo: "I learned the React framework to facilitate more complex and modern web apps.",
+    moreInfo: "I learned the React framework in order to facilitate more complex and modern web apps.",
   },
   {
     skill: "ThreeJS",
