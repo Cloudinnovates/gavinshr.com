@@ -4,7 +4,8 @@
 
 export const skills = [
   {
-    skill: "Swift (iOS Apps)",
+    skill: "Swift",
+    subheading: "iOS Applications",
     color: "#16a34a",
     url: "https://apps.apple.com/us/developer/gavin-shrader/id1319656496",
     urlName: "View My Apps",
@@ -13,7 +14,8 @@ export const skills = [
     moreInfo: "I taught myself how to build iOS applications through the Swift programming language. I have published several applications to the app store.",
   },
   {
-    skill: "HTML",
+    skill: "HTML5",
+    subheading: "Web Development",
     color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
@@ -22,7 +24,8 @@ export const skills = [
     moreInfo: "I learned HTML in order to structure the content of websites.",
   },
   {
-    skill: "CSS",
+    skill: "CSS3",
+    subheading: "Web Development",
     color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
@@ -32,6 +35,7 @@ export const skills = [
   },
   {
     skill: "JavaScript",
+    subheading: "Web Development",
     color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
@@ -41,6 +45,7 @@ export const skills = [
   },
   {
     skill: "ReactJS",
+    subheading: "Web Development",
     color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
@@ -50,6 +55,7 @@ export const skills = [
   },
   {
     skill: "ThreeJS",
+    subheading: "Web Development",
     color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
@@ -58,22 +64,23 @@ export const skills = [
     moreInfo: "I am learning ThreeJS in order to build 3D graphics that run in a browser and eventually build a 3D game.",
   },
   {
-    skill: "Python",
-    color: "#e11d48",
-    url: null,
-    urlName: null,
-    urlOpensInNewTab: false,
-    urlIsNavLink: false,
-    moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms. I can setup and navigate a Python development environment and I have experience with several major Python libraries such as PyGame, PyQT, and NumPy.",
-  },
-  {
     skill: "Git/GitHub",
-    color: "#ea580c",
+    subheading: "Version Control",
+    color: "#e11d48",
     url: "https://github.com/gshrdr/",
     urlName: "GitHub Profile",
     urlOpensInNewTab: true,
     urlIsNavLink: false,
     moreInfo: "I use Git for version control and I use GitHub to store my Git repositories on the cloud to showcase my projects.",
+  },
+  {
+    skill: "Python",
+    color: "#ea580c",
+    url: null,
+    urlName: null,
+    urlOpensInNewTab: false,
+    urlIsNavLink: false,
+    moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms. I can setup and navigate a Python development environment and I have experience with several major Python libraries such as PyGame, PyQT, and NumPy.",
   },
   {
     skill: "Technical Writing & Communication",

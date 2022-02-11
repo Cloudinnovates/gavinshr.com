@@ -16,6 +16,7 @@ export default function Skills() {
                   <div style={{ backgroundColor: skill.color }} className="skills-color"></div>
                   <h2 className="skills-title">{skill.skill}</h2>
                 </div>
+                <h3 className="skills-subheading"><i>{skill.subheading}</i></h3>
               </span>
 
               <span>
