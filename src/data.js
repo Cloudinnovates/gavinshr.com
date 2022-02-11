@@ -4,7 +4,8 @@
 
 export const skills = [
   {
-    skill: "Swift (iOS Applications)",
+    skill: "Swift (iOS Apps)",
+    color: "#16a34a",
     url: "https://apps.apple.com/us/developer/gavin-shrader/id1319656496",
     urlName: "View My Apps",
     urlOpensInNewTab: true,
@@ -13,6 +14,7 @@ export const skills = [
   },
   {
     skill: "HTML",
+    color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
@@ -21,6 +23,7 @@ export const skills = [
   },
   {
     skill: "CSS",
+    color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
@@ -29,6 +32,7 @@ export const skills = [
   },
   {
     skill: "JavaScript",
+    color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
@@ -37,6 +41,7 @@ export const skills = [
   },
   {
     skill: "ReactJS",
+    color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
@@ -45,6 +50,7 @@ export const skills = [
   },
   {
     skill: "ThreeJS",
+    color: "#2563eb",
     url: "/projects",
     urlName: "View Demo Project",
     urlOpensInNewTab: false,
@@ -52,15 +58,8 @@ export const skills = [
     moreInfo: "I am learning ThreeJS in order to build 3D graphics that run in a browser and eventually build a 3D game.",
   },
   {
-    skill: "Git/GitHub",
-    url: "https://github.com/gshrdr/",
-    urlName: "GitHub Profile",
-    urlOpensInNewTab: true,
-    urlIsNavLink: false,
-    moreInfo: "I use Git for version control and I use GitHub to store my Git repositories on the cloud to showcase my projects.",
-  },
-  {
     skill: "Python",
+    color: "#e11d48",
     url: null,
     urlName: null,
     urlOpensInNewTab: false,
@@ -68,7 +67,17 @@ export const skills = [
     moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms. I can setup and navigate a Python development environment and I have experience with several major Python libraries such as PyGame, PyQT, and NumPy.",
   },
   {
+    skill: "Git/GitHub",
+    color: "#ea580c",
+    url: "https://github.com/gshrdr/",
+    urlName: "GitHub Profile",
+    urlOpensInNewTab: true,
+    urlIsNavLink: false,
+    moreInfo: "I use Git for version control and I use GitHub to store my Git repositories on the cloud to showcase my projects.",
+  },
+  {
     skill: "Technical Writing & Communication",
+    color: "#ea580c",
     url: "/blog",
     urlName: "View Blog",
     urlOpensInNewTab: false,

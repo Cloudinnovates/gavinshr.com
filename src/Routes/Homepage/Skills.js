@@ -12,7 +12,10 @@ export default function Skills() {
           {skills.map((skill) => (
             <div key={skill.skill} className="skills-item">
               <span>
-                <h2>{skill.skill}</h2>
+                <div className="skills-title-container">
+                  <div style={{ backgroundColor: skill.color }} className="skills-color"></div>
+                  <h2 className="skills-title">{skill.skill}</h2>
+                </div>
               </span>
 
               <span>

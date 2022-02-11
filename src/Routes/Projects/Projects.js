@@ -15,7 +15,7 @@ export default function Projects() {
         <br/>
         <div style={{ paddingBottom: "2rem" }}>
           <h2>ReactJS Demo</h2>
-          <h3><i>Advanced Front-End JavaScript Framework</i></h3>
+          <h3><i>Front-End JavaScript Framework</i></h3>
           <br/>
 
           <div className="project-image-container">

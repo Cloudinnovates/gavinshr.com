@@ -1,7 +1,13 @@
+/*
+ * Overall skills container
+ */
 .skills-container {
   padding-top: 25px;
 }
 
+/*
+ * Individual skills item
+ */
 .skills-item {
   padding: 20px;
   padding-top: 20px;
@@ -13,4 +19,29 @@
 
 .skills-item-subsection {
   padding-top: 5px;
+}
+
+
+/*
+ * Title with heading & color square
+ */
+.skills-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.skills-color {
+  display: inline-block;
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+  background-color: white;
+}
+
+.skills-title {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
 }
