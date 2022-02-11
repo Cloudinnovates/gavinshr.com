@@ -65,9 +65,18 @@ export default function Projects() {
         <div style={{ paddingBottom: "2rem" }}>
           <h2>ThreeJS Demo</h2>
           <h3><i>3D Rendering With JavaScript</i></h3>
+          <br/>
 
-          <p style={{ paddingTop: "25px" }}>These are a few simple projects that I built using the excellent resources at: <a className="link" href="https://discoverthreejs.com" target="_blank" rel="noopener noreferrer">DiscoverThreeJS.com</a>. For now I have a basic understanding of setting up an environment and rendering 3D graphics in a browser. In the future I plan on extending this knowledge with the goal of developing a full 3D simulation and/or game.</p>
+          <div className="project-image-container">
+            <img
+              className="project-image"
+              src={require("./DemoImages/3D_Demo.png")}
+              alt="Three.JS 3D Graphics With JavaScript Demo Image"
+            />
+          </div>
+          <br/>
 
+          <p style={{ paddingTop: "15px" }}>These are a few simple projects that I built using the excellent resources at: <a className="link" href="https://discoverthreejs.com" target="_blank" rel="noopener noreferrer">DiscoverThreeJS.com</a>. For now I have a basic understanding of setting up an environment and rendering 3D graphics in a browser. In the future I plan on extending this knowledge with the goal of developing a full 3D simulation and/or game.</p>
           <div style={{ paddingTop: "15px" }}>
             <div>
               <a className="link" href="/3D-Test/index.html">3D Test #1 - Cube</a>
