@@ -1,6 +1,6 @@
 /* https://reactrouter.com/docs/en/v6/getting-started/tutorial */
 
-import { Outlet, NavLink } from "react-router-dom"
+import { Outlet, NavLink, useLocation } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 import React, { useState, useEffect, useRef } from "react"
 import Starfield from './Starfield/Starfield'
@@ -10,6 +10,30 @@ function App() {
   const [navListState, setNavListState] = useState('navListClosedNoTransition')
   const [overlayState, setOverlayState] = useState('overlayHidden')
   const drawerRef = useRef(null)
+
+  /* Attempting to fix issues with iOS back swipe. When you swipe back quickly on iOS sometimes the starfield stops
+  animating entirely. The idea here is to determine when the BrowserRouter changes routes and then call a function to update
+  the starfield animation by starting and stopping it. I have a boolean flag to block the first page refresh since this occurs
+  right when you load the website and it causes issues. Right now this function is not working.
+  const [starfieldBlockState, setStarfieldBlockState] = useState('overlayHidden')
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log("BrowserRouter route changed.");
+    updateStarfieldAnimation();
+  }, [location]);
+
+  function updateStarfieldAnimation() {
+    var starfield = document.getElementById('stars')
+    if (starfield != null && starfieldBlockState == false) {
+      console.log("Restart starfield animation.")
+      starfield.classList.remove("stars");
+      void starfield.offsetWidth;  // trigger a DOM reflow
+      starfield.classList.add("stars");
+    }
+    setStarfieldBlockState(false);
+  };
+  */
 
   useEffect(() => {
     /* If the screen resizes beyond our breakpoint, close the nav bar */
@@ -36,6 +60,7 @@ function App() {
     return () => {
       document.removeEventListener("mouseup", closeDrawer)
       document.removeEventListener("resize", handleResize)
+
     }
   }, []);
 
