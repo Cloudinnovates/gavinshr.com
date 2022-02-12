@@ -23,7 +23,7 @@ function App() {
       }
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize)
 
     /* Close the drawer when the user clicks outside of it */
     const closeDrawer = (event) => {
@@ -55,17 +55,17 @@ function App() {
     it detects a back-swipe gesture before the page navigation change occurs.
   */
 
-  const debugBackSwipeAnimation = true; // show or hide these logs in the console
+  const debugBackSwipeAnimation = true // show or hide these logs in the console
   const [recentSwipeBackState, setRecentSwipeBackState] = useState(false)
-  const element = document.body;
+  const element = document.body
+
+  // TODO: Remove this event listener upon return/unmount + handle e.pageX being null/undefined (return)
 
   // Back swipe detection on Safari thanks to: https://pqina.nl/blog/blocking-navigation-gestures-on-ios-13-4/ (with modifications)
   element.addEventListener("touchstart", (e) => {
-    if (debugBackSwipeAnimation) { console.log("Last X position: " + e.pageX) }
-
     // is not near edge of view, exit
-    if (e.pageX > 25 && e.pageX < window.innerWidth - 25) return;
-    if (debugBackSwipeAnimation) { console.log("Back swipe gesture - 25px buffer") }
+    if ((e.pageX > 18) && (e.pageX < window.innerWidth - 18)) { return; }
+    if (debugBackSwipeAnimation) { console.log("Back swipe gesture - 18px buffer"); }
 
     setRecentSwipeBackState(true)
   });
@@ -74,14 +74,14 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    if (debugBackSwipeAnimation) { console.log("----------------------------------") }
-    if (debugBackSwipeAnimation) { console.log("BrowserRouter route changed.") }
+    if (debugBackSwipeAnimation) { console.log("----------------------------------"); }
+    if (debugBackSwipeAnimation) { console.log("BrowserRouter route changed."); }
 
     function updateStarfieldAnimation() {
-      if (debugBackSwipeAnimation) { console.log("Attempt to update starfield animation.") }
+      if (debugBackSwipeAnimation) { console.log("Attempt to update starfield animation."); }
       var starfield = document.getElementById('stars')
       if (starfield !== null && starfieldBlockState === false && recentSwipeBackState === true) {
-        if (debugBackSwipeAnimation) { console.log(">>>>>> Restart starfield animation. <<<<<<") }
+        if (debugBackSwipeAnimation) { console.log(">>>>>> Restart starfield animation. <<<<<<"); }
         const clone = starfield.cloneNode(true)
         starfield.parentNode.replaceChild(clone, starfield)
         setRecentSwipeBackState(false)
