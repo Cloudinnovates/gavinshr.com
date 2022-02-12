@@ -61,11 +61,12 @@ function App() {
 
   // Back swipe detection on Safari thanks to: https://pqina.nl/blog/blocking-navigation-gestures-on-ios-13-4/ (with modifications)
   element.addEventListener("touchstart", (e) => {
-    // is not near edge of view, exit
-    if (e.pageX > 20 && e.pageX < window.innerWidth - 20) return;
+    if (debugBackSwipeAnimation) { console.log("Last X position: " + e.pageX) }
 
-    if (debugBackSwipeAnimation) { console.log("----------------------------------") }
-    if (debugBackSwipeAnimation) { console.log("Back swipe gesture - 20px buffer") }
+    // is not near edge of view, exit
+    if (e.pageX > 25 && e.pageX < window.innerWidth - 25) return;
+    if (debugBackSwipeAnimation) { console.log("Back swipe gesture - 25px buffer") }
+
     setRecentSwipeBackState(true)
   });
 
