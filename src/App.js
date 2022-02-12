@@ -1,5 +1,3 @@
-/* https://reactrouter.com/docs/en/v6/getting-started/tutorial */
-
 import { Outlet, NavLink, useLocation } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 import React, { useState, useEffect, useRef } from "react"
@@ -7,33 +5,14 @@ import Starfield from './Starfield/Starfield'
 import './App.css'
 
 function App() {
+
+  /*
+   * Handle Navigation Menu State Changes
+   */
+
   const [navListState, setNavListState] = useState('navListClosedNoTransition')
   const [overlayState, setOverlayState] = useState('overlayHidden')
   const drawerRef = useRef(null)
-
-  /* Attempting to fix issues with iOS back swipe. When you swipe back quickly on iOS sometimes the starfield stops
-  animating entirely. The idea here is to determine when the BrowserRouter changes routes and then call a function to update
-  the starfield animation by starting and stopping it. I have a boolean flag to block the first page refresh since this occurs
-  right when you load the website and it causes issues. Right now this function is not working.
-  const [starfieldBlockState, setStarfieldBlockState] = useState('overlayHidden')
-  const location = useLocation();
-
-  useEffect(() => {
-    console.log("BrowserRouter route changed.");
-    updateStarfieldAnimation();
-  }, [location]);
-
-  function updateStarfieldAnimation() {
-    var starfield = document.getElementById('stars')
-    if (starfield != null && starfieldBlockState == false) {
-      console.log("Restart starfield animation.")
-      starfield.classList.remove("stars");
-      void starfield.offsetWidth;  // trigger a DOM reflow
-      starfield.classList.add("stars");
-    }
-    setStarfieldBlockState(false);
-  };
-  */
 
   useEffect(() => {
     /* If the screen resizes beyond our breakpoint, close the nav bar */
@@ -63,6 +42,61 @@ function App() {
 
     }
   }, []);
+
+  /*
+   * Handle Mobile Back-Swipe Gesture With Starfield Animation (Restart animation after back swipe occurs)
+   */
+
+  /*
+    Attempting to fix issues with iOS back swipe. When you swipe back quickly on iOS sometimes the starfield stops
+    animating entirely. The idea here is to determine when the BrowserRouter changes routes and then call a function to update
+    the starfield animation by starting and stopping it. I have a boolean flag to block the first page refresh since this occurs
+    right when you load the website and it causes issues. I also have a detection system that will only re-animate the starfield if
+    it detects a back-swipe gesture before the page navigation change occurs.
+  */
+
+  const debugBackSwipeAnimation = true; // show or hide these logs in the console
+  const [recentSwipeBackState, setRecentSwipeBackState] = useState(false)
+  const element = document.body;
+
+  // Back swipe detection on Safari thanks to: https://pqina.nl/blog/blocking-navigation-gestures-on-ios-13-4/ (with modifications)
+  element.addEventListener("touchstart", (e) => {
+    // is not near edge of view, exit
+    if (e.pageX > 10 && e.pageX < window.innerWidth - 10) return;
+
+    if (debugBackSwipeAnimation) { console.log("----------------------------------") }
+    if (debugBackSwipeAnimation) { console.log("Recent back swipe gesture.") }
+    setRecentSwipeBackState(true)
+  });
+
+  const [starfieldBlockState, setStarfieldBlockState] = useState(true)
+  const location = useLocation()
+
+  useEffect(() => {
+    if (debugBackSwipeAnimation) { console.log("----------------------------------") }
+    if (debugBackSwipeAnimation) { console.log("BrowserRouter route changed.") }
+
+    function updateStarfieldAnimation() {
+      if (debugBackSwipeAnimation) { console.log("Attempt to update starfield animation.") }
+      var starfield = document.getElementById('stars')
+      if (starfield !== null && starfieldBlockState === false && recentSwipeBackState === true) {
+        if (debugBackSwipeAnimation) { console.log(">>>>>> Restart starfield animation. <<<<<<") }
+        const clone = starfield.cloneNode(true)
+        starfield.parentNode.replaceChild(clone, starfield)
+        setRecentSwipeBackState(false)
+      }
+      setStarfieldBlockState(false)
+    }
+
+    updateStarfieldAnimation()
+    // disable console warning for including dependencies in this useEffect hook - this is regarding my references to the starfieldBlockState & recentSwipeBackState
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
+
+  /*
+   * Render the main application's backbone:
+   * Animated starfield background, navigation bar, and an outlet for the currently selected page's content
+   */
 
   return (
     <div className="main-screen-fill">
