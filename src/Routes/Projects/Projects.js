@@ -41,7 +41,6 @@ export default function Projects() {
           <div style={{ paddingBottom: "2rem" }}>
             <h2>Maze Generation & Solving Algorithm</h2>
             <h3><i>HTML5, CSS3, & JavaScript Demo</i></h3>
-            <p><i>Work In Progress</i></p>
             <br/>
             <div className="project-image-container">
               <img
