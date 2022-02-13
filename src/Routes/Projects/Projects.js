@@ -39,8 +39,8 @@ export default function Projects() {
           <hr/>
           <br/>
           <div style={{ paddingBottom: "2rem" }}>
-            <h2>Maze Generation & Solving Algorithm</h2>
-            <h3><i>HTML5, CSS3, & JavaScript Demo</i></h3>
+            <h2>Maze Solving Algorithm</h2>
+            <h3><i>HTML5, CSS3 & JavaScript Demo</i></h3>
             <br/>
             <div className="project-image-container">
               <img
@@ -50,7 +50,7 @@ export default function Projects() {
               />
             </div>
             <br/>
-            <p style={{ paddingTop: "15px" }}>HTML/CSS/JavaScript Maze generation & solving program with JavaScript algorithm.</p>
+            <p style={{ paddingTop: "15px" }}>This project demonstrates my knowledge of HTML5, CSS3 and JavaScript. The purpose of this project is to showcase my knowledge in this domain of web-development without relying on the React framework. The maze-generaiton algorithm in this project is not mine (the source is linked on the page). I modified this original generation algorithm and then built my own maze-solving algorithm.</p>
             <div style={{ paddingTop: "15px"}}>
               <a className="link" href="/MazeAlgorithm/index.html">Maze Algorithm Code Demo</a>
               <br/>
