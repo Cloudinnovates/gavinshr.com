@@ -55,7 +55,7 @@ function App() {
     it detects a back-swipe gesture before the page navigation change occurs.
   */
 
-  const debugBackSwipeAnimation = true // show or hide these logs in the console
+  const debugBackSwipeAnimation = false // show or hide these logs in the console
   const [recentSwipeBackState, setRecentSwipeBackState] = useState(false)
   const element = document.body
 
