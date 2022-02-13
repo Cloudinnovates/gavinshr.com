@@ -45,7 +45,7 @@ export default function Projects() {
             <div className="project-image-container">
               <img
                 className="project-image"
-                src={require("./DemoImages/EvolutionDemo.png")}
+                src={require("./DemoImages/MazeDemo.png")}
                 alt="Maze Algorithm Project Screenshot"
               />
             </div>
