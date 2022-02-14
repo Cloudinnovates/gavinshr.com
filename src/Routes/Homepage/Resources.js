@@ -22,6 +22,8 @@ export default function Resources() {
         <p><a className="link" href="https://zellwk.com/about/" target="_blank" rel="noopener noreferrer">Link Hover Animation Inspiration - Zell Liew</a></p>
         <p><a className="link" href="https://www.pluralsight.com/guides/re-render-react-component-on-window-resize" target="_blank" rel="noopener noreferrer">ReactJS - Handle Re-Rendering Components With Window Resize</a></p>
         <p><a className="link" href="https://mailtrap.io/blog/react-contact-form/" target="_blank" rel="noopener noreferrer">ReactJS + PHP Email Based Contact Form</a></p>
+        <p><a className="link" href="https://favicon.io" target="_blank" rel="noopener noreferrer">Favicon Generator</a></p>
+        <p><a className="link" href="https://cloudconvert.com/pdf-to-html" target="_blank" rel="noopener noreferrer">PDF To HTML Converter</a></p>
       </div>
 
       <div style={{ width: "100%", height: "300px" }}/>
