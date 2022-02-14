@@ -1,6 +1,18 @@
 # gavinshr.com
 Source Code For My Portfolio: [gavinshr.com](https://gavinshr.com)  
 
+## Technologies Used
+- [React](https://reactjs.org) (Front-End JavaScript Framework)
+- [Three.JS](https://github.com/mrdoob/three.js/) (3D JavaScript Framework)
+- HTML5
+- CSS3
+- JavaScript
+- JSON
+
+## Want to create a website with a similar theme?
+Check out the resources/assets I used: [gavinshr.com/resources](https://gavinshr.com/resources)
+
+# Running The Code
 
 ## Clone the repo
 `git clone https://github.com/gshrdr/gavinshr.com.git`
@@ -39,5 +51,14 @@ npm run build
 
 I personally use BlueHost for my hosting & CyberDuck for my FTP connection to the host. Your results may vary if you use a different configuration.
 
-## Want to create a website with a similar theme?
-Check out the resources/assets I used: [gavinshr.com/resources](https://gavinshr.com/resources)
+# Upcoming Features
+
+- [ ] Blog + technical writing content 
+- [ ] SEO improvements (React-Router hybrid back-end server)
+- [ ] Accessibility improvements
+- [ ] Performance enhancements (Three.JS minifaction + code minification)
+- [ ] Analytics + page view statistics
+- [ ] iPhone Safari landscape text-size improvements
+- [ ] Cleaner code; organize App.js & other larger files into smaller modules
+- [ ] Side Project #2 - JavaScript evolution simulator with HTML5 canvas, camera, game loop, entity system, user input, & local state storage
+
