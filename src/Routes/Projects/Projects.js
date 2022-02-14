@@ -50,7 +50,7 @@ export default function Projects() {
               />
             </div>
             <br/>
-            <p style={{ paddingTop: "15px" }}>This project demonstrates my knowledge of HTML5, CSS3 and JavaScript. The purpose of this project is to showcase my knowledge in this domain of web-development without relying on the React framework. The maze-generaiton algorithm in this project is not mine (the source is linked on the page). I modified this original generation algorithm and then built my own maze-solving algorithm.</p>
+            <p style={{ paddingTop: "15px" }}>The purpose of this project is to showcase my knowledge of vanilla web-development using HTML5, CSS3 & JavaScript without relying on the React framework. The maze-generaiton algorithm in this project is not originally mine (the <a className="link" href="https://codepen.io/mohamed9714/pen/dyPoaGx">source</a> is linked on the page). I modified the original generation algorithm along with coding my own maze-solving algorithm.</p>
             <div style={{ paddingTop: "15px"}}>
               <a className="link" href="/MazeAlgorithm/index.html">Maze Algorithm Code Demo</a>
               <br/>
