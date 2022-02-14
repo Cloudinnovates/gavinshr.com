@@ -68,7 +68,7 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 - [ ] Side Project #2 - JavaScript evolution simulator with HTML5 canvas, camera, game loop, entity system, user input, & local state storage
 
 ```diff
-- text in red
+- - [x] About Me, Skills, Resume, Contact Form, Projects & Resources pages
 + text in green
 ! text in orange
 # text in gray
