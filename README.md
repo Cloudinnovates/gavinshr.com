@@ -53,10 +53,12 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 
 # Upcoming Features
 
-- [x] About Me, Skills, Resume, Contact Form, Projects & Resources pages
-- [x] Animated starfield background
-- [x] Mobile friendly navigation bar menu
-- [x] Side project #1 - Maze solving algorithm    
+'''
+! - [x] About Me, Skills, Resume, Contact Form, Projects & Resources pages
++ - [x] Animated starfield background
+! - [x] Mobile friendly navigation bar menu
+! - [x] Side project #1 - Maze solving algorithm    
+'''
 - [ ] Blog + technical writing content 
 - [ ] SEO improvements (React-Router hybrid back-end server)
 - [ ] Accessibility improvements
