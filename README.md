@@ -60,6 +60,7 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 - [ ] Blog + technical writing content 
 - [ ] SEO improvements (React-Router hybrid back-end server)
 - [ ] Accessibility improvements
+- [ ] Resume improvements (download button, better formatting on document)
 - [ ] Performance enhancements (Three.JS minification + general code minification)
 - [ ] Analytics + page view statistics
 - [ ] iPhone Safari landscape text-size improvements
