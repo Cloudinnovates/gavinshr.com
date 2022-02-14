@@ -53,12 +53,10 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 
 # Upcoming Features
 
-'''
-! - [x] About Me, Skills, Resume, Contact Form, Projects & Resources pages
-+ - [x] Animated starfield background
-! - [x] Mobile friendly navigation bar menu
-! - [x] Side project #1 - Maze solving algorithm    
-'''
+- [x] About Me, Skills, Resume, Contact Form, Projects & Resources pages
+- [x] Animated starfield background
+- [x] Mobile friendly navigation bar menu
+- [x] Side project #1 - Maze solving algorithm    
 - [ ] Blog + technical writing content 
 - [ ] SEO improvements (React-Router hybrid back-end server)
 - [ ] Accessibility improvements
@@ -68,4 +66,12 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 - [ ] iPhone Safari landscape text-size improvements
 - [ ] Cleaner code; organize App.js & other larger files into smaller modules
 - [ ] Side Project #2 - JavaScript evolution simulator with HTML5 canvas, camera, game loop, entity system, user input, & local state storage
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
