@@ -45,7 +45,7 @@
  }
 
 .navLink:after {
-    transform: translateY(-150%);
+    transform: scaleX(0.2) translateY(-150%);
     opacity: 0;
     display: block;
     position: absolute;
@@ -64,7 +64,7 @@
 }
 
 .navLink:active:after, .navLink:hover:after {
-    transform: translateY(0);
+    transform: scaleX(1) translateY(0);
     opacity: 1;
 }
 
