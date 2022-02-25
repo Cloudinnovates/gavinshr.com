@@ -59,6 +59,20 @@ export default function Projects() {
           </div>
         </section>
 
+        <section id="database-project">
+          <hr/>
+          <br/>
+          <div style={{ paddingBottom: "2rem" }}>
+            <h2>PHP & MySQL Database Project</h2>
+            <h3><i>Work In Progress Database System</i></h3>
+            <h4 style={{ color: "red" }}><i>Work In Progress</i></h4>
+            <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I am building this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial. I am using this tutorial to build a simple back-end for my blog in order to support server-side hosting on my cheap shared hosting (I am unable to run a NodeJS environment currently, although I plan on learning this technology next.)</p>
+            <div style={{ paddingTop: "15px"}}>
+              <a className="link" href="https://github.com/gshrdr/PHP-SQL-Blog" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
+            </div>
+          </div>
+        </section>
+
         <section id="threejs-project">
           <hr/>
           <br/>
