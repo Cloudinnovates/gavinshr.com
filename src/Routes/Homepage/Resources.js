@@ -25,6 +25,7 @@ export default function Resources() {
         <p><a className="link" href="https://mailtrap.io/blog/react-contact-form/" target="_blank" rel="noopener noreferrer">ReactJS + PHP Email Based Contact Form</a></p>
         <p><a className="link" href="https://favicon.io" target="_blank" rel="noopener noreferrer">Favicon Generator</a></p>
         <p><a className="link" href="https://cloudconvert.com/pdf-to-html" target="_blank" rel="noopener noreferrer">PDF To HTML Converter</a></p>
+        <p><a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database" target="_blank" rel="noopener noreferrer">PHP & MySQL Blog Tutorial</a></p>
       </div>
 
       <div style={{ width: "100%", height: "300px" }}/>
