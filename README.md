@@ -7,6 +7,8 @@ Source Code For My Portfolio: [gavinshr.com](https://gavinshr.com)
 - HTML5
 - CSS3
 - JavaScript
+- PHP
+- MySQL
 - JSON
 
 ## Want to create a website with a similar theme?
