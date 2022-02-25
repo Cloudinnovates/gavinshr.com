@@ -78,7 +78,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: true,
-    moreInfo: "I am learning PHP in order to build a back-end system for my Blog. I can not currently run NodeJS on my shared hosting, so I'm using PHP since it runs on an Apache server.",
+    moreInfo: "I am using PHP in order to build a back-end system for my Blog. I can not currently run NodeJS on my shared hosting, so I'm using PHP since it runs on an Apache server.",
   },
   {
     skill: "MySQL",
@@ -89,7 +89,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: true,
-    moreInfo: "I am learning MySQL in order to build a database system for my Blog.",
+    moreInfo: "I am using MySQL in order to build a database system for my Blog.",
   },
   {
     skill: "Git/GitHub",
