@@ -89,7 +89,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: true,
-    moreInfo: "I am learning MySQL in order to build a database system for my Blog. I can not currently run NodeJS on my shared hosting, so I'm using PHP since it runs on an Apache server.",
+    moreInfo: "I am learning MySQL in order to build a database system for my Blog.",
   },
   {
     skill: "Git/GitHub",
