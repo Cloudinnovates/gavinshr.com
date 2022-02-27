@@ -68,16 +68,6 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 450px) {
-  .navLink:after {
-      transform: translateY(-150%);
-   }
-
-   .navLink:active:after, .navLink:hover:after {
-       transform: translateY(0);
-   }
-}
-
 /*
  * Navigation Bar Items List
  */
