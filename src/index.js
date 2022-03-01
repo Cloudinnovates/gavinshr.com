@@ -6,8 +6,7 @@ import {
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom"
 import ScrollToTop from "./Utils/ScrollToTop"
 import "./index.css"

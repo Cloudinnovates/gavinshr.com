@@ -14,7 +14,7 @@
      if (shouldShowConsoleDebug) { console.log("Navigation to location: " + location.pathname + " Full URL: " + window.location.href); }
      // don't scroll to top for homepage - allow browser router to scroll to skills, contact page, etc.
      if (location.pathname !== "/") {
-       if (location.pathname === "/projects" && (window.location.href.indexOf("#") != -1)) {
+       if (location.pathname === "/projects" && (window.location.href.indexOf("#") !== -1)) {
          // pathname doesn't show hash - href does. So check if the location is
          // on the projects page and IF a hash also exists then we want to scorll to the hash section not the top.
          if (shouldShowConsoleDebug) { console.log("Navigating to projects page with hash link, do not scroll to top."); }
