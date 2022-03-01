@@ -25,6 +25,8 @@
      } else {
         if (shouldShowConsoleDebug) { console.log("Navigating to index page, do not scroll to top."); }
      }
+     // disable console warning for including dependencies in this useEffect hook - this is regarding my references to shouldShowConsoleDebug
+     // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [location]);
 
    return <>{props.children}</>
