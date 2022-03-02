@@ -19,16 +19,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "reactSnap": {
     "exclude": [
-      "/MazeAlgorithm",
-      "/3D-Test",
-      "/3D-Test-2-Orbital",
-      "/3D-Test-3-Spheres",
+      "/MazeAlgorithm/*",
+      "/3D-Test/*",
+      "/3D-Test-2-Orbital/*",
+      "/3D-Test-3-Spheres/*",
       "/Resume.html"
     ],
     "sitemap": true
