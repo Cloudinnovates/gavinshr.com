@@ -84,7 +84,7 @@ export default function Projects() {
               <img
                 className="project-image"
                 src={require("./DemoImages/3D_Demo.png")}
-                alt="Three.JS 3D Graphics With JavaScript Demo Image"
+                alt="Three.JS 3D Graphics With JavaScript Demo"
               />
             </div>
             <br/>

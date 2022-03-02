@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 
 export default function NotFound() {
@@ -10,7 +9,7 @@ export default function NotFound() {
           <h1 style={{ display: "inline-block" }}>404: Path Not Found</h1>
         </div>
 
-        <img style={{ paddingTop: "25px", width: "80%", opacity: "0.88" }} alt="404 Path Not Found Image" src="./404.jpg" />
+        <img style={{ paddingTop: "25px", width: "80%", opacity: "0.88" }} alt="404 Path Not Found" src="./404.jpg" />
 
         <div style={{ paddingTop: "25px" }}><Link className="link" to="/">&larr; Homepage</Link></div>
 

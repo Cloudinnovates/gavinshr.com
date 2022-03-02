@@ -59,8 +59,8 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 - [x] Animated starfield background
 - [x] Mobile friendly navigation bar menu
 - [x] Side project #1 - Maze solving algorithm   
-- [ ] Blog + technical writing content 
-- [ ] SEO improvements (React-Router hybrid back-end server)
+- [x] SEO improvements (React-Router + React-Snap server-side pre-rendering)
+- [ ] Blog + technical writing content
 - [ ] Accessibility improvements
 - [ ] Resume improvements (download button, better formatting on document)
 - [ ] Performance enhancements (Three.JS minification + general code minification)
