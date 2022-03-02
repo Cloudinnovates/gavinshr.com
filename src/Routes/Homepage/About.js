@@ -15,7 +15,7 @@ export default function About() {
           <div className="container">
             <div className="container-half-width">
               <div className="image-container">
-                <img  className="cover-image"  alt="About Me Cover Artwork - Image Of Astronaut" src="./astronaut.png" />
+                <img  className="cover-image"  alt="About Me Cover Artwork" src="./astronaut.png" />
               </div>
             </div>
             <div className="container-half-width">
