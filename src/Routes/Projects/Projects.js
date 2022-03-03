@@ -50,7 +50,7 @@ export default function Projects() {
               />
             </div>
             <br/>
-            <p style={{ paddingTop: "15px" }}>The purpose of this project is to showcase my knowledge of vanilla web-development using HTML5, CSS3 & JavaScript without relying on the React framework. The maze-generaiton algorithm in this project is not originally mine (the <a className="link" href="https://codepen.io/mohamed9714/pen/dyPoaGx">source</a> is linked on the project's page). I modified the original generation algorithm along with coding my own maze-solving algorithm.</p>
+            <p style={{ paddingTop: "15px" }}>The purpose of this project is to showcase my knowledge of vanilla web-development using HTML5, CSS3 & JavaScript, without relying on the React framework. There are two algorithms used in this project, a maze solving algorithm (coded by me), and a maze generation algorithm. The maze-generation algorithm in this project is not originally mine (the <a className="link" href="https://codepen.io/mohamed9714/pen/dyPoaGx">source</a> is linked on the project's page).</p>
             <div style={{ paddingTop: "15px"}}>
               <a className="link" href="/MazeAlgorithm/index.html">Maze Algorithm Code Demo</a>
               <br/>
@@ -105,7 +105,7 @@ export default function Projects() {
           <div style={{ paddingBottom: "2rem" }}>
             <h2>PHP & MySQL Database Project</h2>
             <h3><i>Back-End Database System</i></h3>
-            <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I am building this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial in order to integrate server-side functionality on my cheap, shared, non-NodeJS hosting.</p>
+            <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I am building this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial in order to integrate server-side functionality onto my cheap, shared, non-NodeJS hosting. This project showcases my knowledge so far, however, the full demonstration of my PHP & MySQL knowledge will be demonstrated once I finish coding my Blog from scratch. For now, this project showcases my ability to create a database programmatically and update, read, and delete individual items in that database using code.</p>
             <div style={{ paddingTop: "15px"}}>
               <a className="link" href="https://github.com/gshrdr/PHP-SQL-Blog" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
             </div>
