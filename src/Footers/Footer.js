@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
-        <p>This website was coded using HTML, CSS, JavaScript, and ReactJS; it is a work in progress and will continue to be updated. Thank you for viewing my site, any feedback is appreciated!</p>
+        <p>This website was coded using HTML, CSS, JavaScript, and React; it is a work in progress and will continue to be updated. Thank you for viewing my site, any feedback is appreciated!</p>
         <p style={{ paddingTop: "15px" }}>Contact, Blog, GitHub & YouTube:</p>
         <p><i>Blog & YouTube In Progress.</i></p>
 

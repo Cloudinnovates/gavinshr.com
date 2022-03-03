@@ -1,7 +1,6 @@
 <?php
 // Source: https://mailtrap.io/blog/react-contact-form/
 // Start PHP server on different port: navigate to project directory >> php -S localhost:3002 mail.php
-// PHP Kinda sucks... but my hosting is dirt cheap so I'm not running a Node.JS environment yet, so I'm stuck with PHP for now!
 
 // Allow for asynchonroucs calls from browser to backend
 header("Access-Control-Allow-Origin: *");

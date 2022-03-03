@@ -48,7 +48,7 @@ export const skills = [
     moreInfo: "I learned JavaScript in order to build interactivity into websites.",
   },
   {
-    skill: "ReactJS",
+    skill: "React",
     subheading: "Web Development",
     color: "#2563eb",
     url: "/projects#react-project",

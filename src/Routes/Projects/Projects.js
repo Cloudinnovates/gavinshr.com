@@ -15,7 +15,7 @@ export default function Projects() {
           <hr/>
           <br/>
           <div style={{ paddingBottom: "2rem" }}>
-            <h2>ReactJS Demo</h2>
+            <h2>React Demo</h2>
             <h3><i>Front-End JavaScript Framework</i></h3>
             <br/>
             <div className="project-image-container">
@@ -26,9 +26,9 @@ export default function Projects() {
               />
             </div>
             <br/>
-            <p style={{ paddingTop: "15px" }}>This website is my ReactJS demo! My portfolio was built using ReactJS with some HTML5, CSS3, and JavaScript.</p>
+            <p style={{ paddingTop: "15px" }}>This website is my React demo! My portfolio was built using React with some HTML5, CSS3, and JavaScript.</p>
             <div style={{ paddingTop: "15px"}}>
-              <a className="link" href="https://gavinshr.com">ReactJS Demo - gavinshr.com</a>
+              <a className="link" href="https://gavinshr.com">React Demo - gavinshr.com</a>
               <br/>
               <a className="link" href="https://github.com/gshrdr/gavinshr.com" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
             </div>

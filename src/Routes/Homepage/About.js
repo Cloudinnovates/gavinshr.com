@@ -19,7 +19,7 @@ export default function About() {
               </div>
             </div>
             <div className="container-half-width">
-              <p>I am a self taught developer and my goal is to land a job as a Front-End Web Developer. I have been working on web-development consistently since the end of 2021; I have also been coding across various other disciplines as a hobby for several years.</p>
+              <p>I am a self taught developer and my goal is to land a job as a Front-End Web Developer by the end of 2022. I have been working on web-development consistently since the end of 2021; I have also been coding across various other disciplines as a hobby for several years.</p>
               <p style={{ paddingTop: "15px" }}>This portfolio showcases my website design progress, resume, skills, projects, contact information, and blog.</p>
             </div>
           </div>
