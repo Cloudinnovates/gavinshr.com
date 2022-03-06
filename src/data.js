@@ -78,7 +78,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: true,
-    moreInfo: "I am using PHP in order to build a back-end system for my Blog. I can not currently run NodeJS on my shared hosting, so I'm using PHP since it runs on an Apache server.",
+    moreInfo: "I am capable of using PHP for basic server-side scripting such as an email contact form, user login/sign up, and a basic Blog.",
   },
   {
     skill: "MySQL",
@@ -89,7 +89,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: true,
-    moreInfo: "I am using MySQL in order to build a database system for my Blog.",
+    moreInfo: "I am capable of using MySQL to setup database systems for a basic back-end.",
   },
   {
     skill: "Git/GitHub",
@@ -120,6 +120,6 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: true,
     urlIsHashLink: false,
-    moreInfo: "I am capable of breaking down complex technical problems into simple steps & tutorials. My blog will showcase this in the near future with technical articles.",
+    moreInfo: "I am capable of breaking down complex technical problems into simple steps & tutorials. You can view my technical writing on my Blog.",
   },
 ];

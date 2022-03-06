@@ -105,7 +105,7 @@ export default function Projects() {
           <div style={{ paddingBottom: "2rem" }}>
             <h2>PHP & MySQL Database Project</h2>
             <h3><i>Back-End Database System</i></h3>
-            <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I am building this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial in order to integrate server-side functionality onto my cheap, shared, non-NodeJS hosting. This project showcases my knowledge so far, however, the full demonstration of my PHP & MySQL knowledge will be demonstrated once I finish coding my Blog from scratch. For now, this project showcases my ability to create a database programmatically and update, read, and delete individual items in that database using code.</p>
+            <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I built this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial. This project showcases my knowledge of how to create a database programmatically and update, read, and delete individual items in that database using code. I followed this tutorial in order to begin building a Blog from scratch using PHP/MySQL, but after completing the tutorial I opted to use Medium for a simpler approach (and in the future I will eventually upgrade to a Ghost CMS + Node.JS system).</p>
             <div style={{ paddingTop: "15px"}}>
               <a className="link" href="https://github.com/gshrdr/PHP-SQL-Blog" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a>
             </div>
