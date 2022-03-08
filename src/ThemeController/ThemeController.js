@@ -36,7 +36,9 @@ export default function ThemeController() {
           <i className="fa fa-cog"></i>
         </button>
 
-        <div ref={selectPanelRef} className={`selector-panel ${bgState}`}></div>
+        <div ref={selectPanelRef} className={`selector-panel ${bgState}`}>
+          <div className="selector-panel-inner"></div>
+        </div>
       </div>
     </div>
   );
