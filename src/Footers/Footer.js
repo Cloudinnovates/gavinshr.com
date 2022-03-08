@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright &copy;2022 Gavin Shrader</p>
+          <p>Copyright &copy;2022 <br/> Gavin Shrader</p>
         </div>
       </div>
     </footer>

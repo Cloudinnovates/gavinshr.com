@@ -83,8 +83,10 @@
 .selector-panel {
   background-color: #111827;
   border: 2px solid #374151;
-  width: 450px;
-  height: 600px;
+
+  width: 90%;
+  height: 90%;
+
   align-items: center;
 
   pointer-events: auto;
@@ -94,6 +96,10 @@
   text-align: center;
   color: #fff;
   transition: 500ms ease;
+}
+
+.selector-panel:hover {
+  border: 2px solid white;
 }
 
 .selector-panel-hidden {
@@ -107,20 +113,32 @@
 /* Main Inner Container */
 .selector-panel-inner {
   padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Main Inner Container Icon */
 .selector-panel-inner i {
   font-size: 1.5em;
   display: inline-block;
   margin-right: 10px;
 }
 
+/* Main Inner Container Title Group */
 .selector-panel-inner h1 {
   display: inline-block;
 }
 
 .selector-panel-title-group {
   position: relative;
+}
+
+.selector-panel-title-group-center {
+  display: flex;
+  align-items: center;
 }
 
 .selector-panel-title-group:after {
@@ -143,6 +161,41 @@
     opacity: 1;
 }
 
+/* Main Inner Container Exit Button */
+.exit-button {
+  position: absolute;
+  bottom: 20px;
+
+  color: white;
+  background: #1d4ed8;
+  border: 2px solid #1d4ed8;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.exit-button:hover {
+  border: 2px solid white;
+}
+
+/* Main Inner Container Center Content */
+.settings-main-content {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 /* Hover border animation source: https://codepen.io/mmoonn/pen/PwvraE?editors=0100 */
 .selector-panel:before {
@@ -194,25 +247,25 @@
 }
 
 .selector-panel:hover:before {
-  width: 450px;
+  width: 100%;
   transition: 100ms width ease 0ms;
   -web-kit-transition: 100ms width ease 0ms;
 }
 
 .selector-panel:hover:after {
-  height: 600px;
+  height: 100%;
   transition: 100ms height ease 100ms;
   -web-kit-transition: 100ms height ease 100ms;
 }
 
 .selector-panel:hover .selector-panel-inner:after {
-  width: 450px;
+  width: 100%;
   transition: 100ms width ease 200ms;
   -web-kit-transition: 100ms width ease 200ms;
 }
 
 .selector-panel:hover .selector-panel-inner:before {
-  height: 600px;
+  height: 100%;
   transition: 100ms height ease 300ms;
   -web-kit-transition: 100ms height ease 300ms;
 }
@@ -234,37 +287,9 @@
     font-size: 2em;
   }
 
-  .toggle-button {
-    transition: all .2s ease-in-out;
-  }
-
-  .toggle-button:hover {
-    border: 2px solid white;
-    background-color: #1d4ed8;
-
-    transform: scale(1.1);
-  }
-
-  /* Selector Panel
+  /* Selector Panel */
   .selector-panel {
-    width: 80%;
-    height: 80%;
+    width: 450px;
+    height: 600px;
   }
-
-  .selector-panel:hover:before {
-    width: 80%;
-  }
-
-  .selector-panel:hover:after {
-    height: 80%;
-  }
-
-  .selector-panel:hover .selector-panel-inner:after {
-    width: 80%;
-  }
-
-  .selector-panel:hover .selector-panel-inner:before {
-    height: 80%;
-  }
-  */
 }
