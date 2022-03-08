@@ -12,7 +12,7 @@ export default function Blog() {
 
         <p style={{ paddingTop: "15px" }}>This blog is a work in progress. Expect to see changes and updates in the near future!</p>
 
-        <div style={{ width: "100%", height: "300px" }}/>
+        <div style={{ width: "100%", height: "800px" }}/>
       </div>
     </main>
   );

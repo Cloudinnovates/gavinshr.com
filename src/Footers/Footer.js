@@ -8,7 +8,6 @@ export default function Footer() {
       <div className="footer-content">
         <p>This website was coded using HTML, CSS, JavaScript, and React; it is a work in progress and will continue to be updated. Thank you for viewing my site, any feedback is appreciated!</p>
         <p style={{ paddingTop: "15px" }}>Contact, Blog, GitHub & YouTube:</p>
-        <p><i>Blog & YouTube In Progress.</i></p>
 
         <ul className="socials">
           <li><HashLink className="footer-navLink" smooth to="/#contact"><i className="fa fa-envelope-o"></i></HashLink></li>
