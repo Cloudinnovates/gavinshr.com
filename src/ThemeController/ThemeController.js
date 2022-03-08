@@ -60,7 +60,6 @@ export default function ThemeController() {
 
      if (theme === null) {
        localStorage.setItem('theme', 'dark')
-       console.log("Manual override dark theme - unset in ls")
        theme = 'dark'
      }
 
@@ -94,9 +93,9 @@ export default function ThemeController() {
       localStorage.setItem('starfield', starfield)
 
       if (starfield === 'enabled') {
-        document.getElementById('starfield').style.display = 'block'
+        document.getElementById('starfield').className = 'stars-container shown'
       } else {
-        document.getElementById('starfield').style.display = 'none'
+        document.getElementById('starfield').className = 'stars-container hidden'
       }
     }
 

@@ -1,26 +1,29 @@
+import { useState, useEffect } from "react"
 import './Starfield.css'
 
 export default function Starfield() {
 
-  const getStarfieldInitialDisplayState = () => {
-    const starfield = localStorage.getItem('starfield');
+  const [starfieldState, setStarfieldState] = useState('shown')
 
-    if (starfield === null) {
-      // Null - enabled
-      return "block";
+  useEffect(() => {
+    let starfieldLocalValue = localStorage.getItem('starfield');
+    if (starfieldLocalValue === null) {
+      // Null - Enabled
+      localStorage.setItem('starfield', 'enabled')
+      setStarfieldState('shown')
     } else {
-      if (starfield === 'enabled') {
+      if (starfieldLocalValue === 'enabled') {
         // Enabled
-        return "block";
+        setStarfieldState('shown')
       } else {
         // Disabled
-        return "none";
+        setStarfieldState('hidden')
       }
     }
-  }
+  }, [starfieldState]);
 
   return (
-    <div className="stars-container" id="starfield" style={{ display: getStarfieldInitialDisplayState() }}>
+    <div className={`stars-container ${starfieldState}`} id="starfield">
       <div id="stars" className="stars"></div>
     </div>
   );
