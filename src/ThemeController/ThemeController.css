@@ -1,0 +1,96 @@
+.themeController-background {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+
+  opacity: 0.75;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+.themeController-container {
+  z-index: 200;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: transparent;
+
+  opacity: 1;
+  pointer-events: none;
+
+  display: block;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button {
+  background-color: #1d4ed8;
+  border: none;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+
+  pointer-events: auto;
+}
+
+.toggle-button:hover {
+  border: 2px solid white;
+  background-color: #1d4ed8;
+}
+
+.themeController-container i {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+  font-size: 1.5em;
+}
+
+.selector-panel {
+  background-color: #1f2937;
+  border: 2px solid #374151;
+
+  width: 450px;
+  height: 600px;
+}
+
+/* Handle anything over small screen sizes */
+@media screen and (min-width: 450px) {
+  .toggle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .themeController-container i {
+    font-size: 2em;
+  }
+
+  .toggle-button {
+    transition: all .2s ease-in-out;
+  }
+
+  .toggle-button:hover {
+    border: 2px solid white;
+    background-color: #1d4ed8;
+
+    transform: scale(1.1);
+  }
+}

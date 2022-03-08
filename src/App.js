@@ -2,6 +2,7 @@ import { Outlet, NavLink, useLocation } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 import React, { useState, useEffect, useRef } from "react"
 import Starfield from './Starfield/Starfield'
+import ThemeController from './ThemeController/ThemeController'
 import './App.css'
 
 function App() {
@@ -140,6 +141,8 @@ function App() {
         </nav>
       </div>
 
+      <ThemeController />
+      
       <Outlet />
     </div>
   );
