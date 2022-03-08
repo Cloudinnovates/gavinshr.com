@@ -1,4 +1,7 @@
-.themeController-background {
+/*
+ * Theme Controller Main Containers
+ */
+.theme-controller-background {
   z-index: 100;
   position: fixed;
   width: 100vw;
@@ -8,15 +11,15 @@
   opacity: 0.75;
 }
 
-.hidden {
+.theme-controller-hidden {
   display: none;
 }
 
-.shown {
+.theme-controller-shown {
   display: block;
 }
 
-.themeController-container {
+.theme-controller-container {
   z-index: 200;
   position: fixed;
   width: 100vw;
@@ -33,6 +36,9 @@
   justify-content: center;
 }
 
+/*
+ * Toggle Button
+ */
 .toggle-button {
   background-color: #1d4ed8;
   border: none;
@@ -48,12 +54,20 @@
   pointer-events: auto;
 }
 
+.toggle-button-hidden {
+  display: none;
+}
+
+.toggle-button-shown {
+  display: block;
+}
+
 .toggle-button:hover {
   border: 2px solid white;
   background-color: #1d4ed8;
 }
 
-.themeController-container i {
+.theme-controller-container i {
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -63,15 +77,135 @@
   font-size: 1.5em;
 }
 
+/*
+ * Selector Panel Box
+ */
+.selector-panel {
+  background-color: #111827;
+  border: 2px solid #374151;
+  width: 450px;
+  height: 600px;
+  align-items: center;
+
+  pointer-events: auto;
+
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  transition: 500ms ease;
+}
+
+.selector-panel-hidden {
+  display: none;
+}
+
+.selector-panel-shown {
+  display: block;
+}
+
+/* Main Inner Container */
+.selector-panel-inner {
+  padding: 20px;
+}
+
+.selector-panel-inner i {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.selector-panel-inner h1 {
+  display: inline-block;
+}
+
+/* Hover border animation source: https://codepen.io/mmoonn/pen/PwvraE?editors=0100 */
+.selector-panel:before {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  content: "";
+  background: #fff;
+  top: -2px;
+  left: -2px;
+  transition: 100ms width ease 300ms;
+  -web-kit-transition: 100ms width ease 300ms;
+}
+
+.selector-panel:after {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  content: "";
+  background: #fff;
+  top: -2px;
+  right: -2px;
+  transition: 100ms height ease 200ms;
+  -web-kit-transition: 100ms height ease 200ms;
+}
+
+.selector-panel-inner:after {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  content: "";
+  background: #fff;
+  bottom: -2px;
+  right: -2px;
+  transition: 100ms width ease 100ms;
+  -web-kit-transition: 100ms width ease 100ms;
+}
+
+.selector-panel-inner:before {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  content: "";
+  background: #fff;
+  bottom: -2px;
+  left: -2px;
+  transition: 100ms height ease 0ms;
+  -web-kit-transition: 100ms height ease 0ms;
+}
+
+.selector-panel:hover:before {
+  width: 450px;
+  transition: 100ms width ease 0ms;
+  -web-kit-transition: 100ms width ease 0ms;
+}
+
+.selector-panel:hover:after {
+  height: 600px;
+  transition: 100ms height ease 100ms;
+  -web-kit-transition: 100ms height ease 100ms;
+}
+
+.selector-panel:hover .selector-panel-inner:after {
+  width: 450px;
+  transition: 100ms width ease 200ms;
+  -web-kit-transition: 100ms width ease 200ms;
+}
+
+.selector-panel:hover .selector-panel-inner:before {
+  height: 600px;
+  transition: 100ms height ease 300ms;
+  -web-kit-transition: 100ms height ease 300ms;
+}
+
+/*
+ * Media Queries
+ */
+
 /* Handle anything over small screen sizes */
 @media screen and (min-width: 450px) {
+  /* Toggle Button */
   .toggle-button {
     width: 50px;
     height: 50px;
     border-radius: 25px;
   }
 
-  .themeController-container i {
+  .theme-controller-container i {
     font-size: 2em;
   }
 
@@ -85,92 +219,27 @@
 
     transform: scale(1.1);
   }
-}
 
+  /* Selector Panel
+  .selector-panel {
+    width: 80%;
+    height: 80%;
+  }
 
+  .selector-panel:hover:before {
+    width: 80%;
+  }
 
+  .selector-panel:hover:after {
+    height: 80%;
+  }
 
+  .selector-panel:hover .selector-panel-inner:after {
+    width: 80%;
+  }
 
-/*
- * Selector Panel Box
- */
-.selector-panel {
-  background-color: #111827;
-  border: 2px solid #374151;
-
-  width: 450px;
-  height: 600px;
-
-  pointer-events: auto;
-
-  position: relative;
-  margin: auto;
-  text-align: center;
-  color: #fff;
-  transition: 500ms ease;
-}
-/* Hover border animation source: https://codepen.io/mmoonn/pen/PwvraE?editors=0100 */
-.selector-panel:before {
-  position: absolute;
-  width: 0;
-  height: 2px;
-  content: "";
-  background: #fff;
-  top: -2px;
-  left: -2px;
-  transition: 100ms width ease 300ms;
-  -web-kit-transition: 100ms width ease 300ms;
-}
-.selector-panel:after {
-  position: absolute;
-  width: 2px;
-  height: 0;
-  content: "";
-  background: #fff;
-  top: -2px;
-  right: -2px;
-  transition: 100ms height ease 200ms;
-  -web-kit-transition: 100ms height ease 200ms;
-}
-.selector-panel-inner:after {
-  position: absolute;
-  width: 0;
-  height: 2px;
-  content: "";
-  background: #fff;
-  bottom: -2px;
-  right: -2px;
-  transition: 100ms width ease 100ms;
-  -web-kit-transition: 100ms width ease 100ms;
-}
-.selector-panel-inner:before {
-  position: absolute;
-  width: 2px;
-  height: 0;
-  content: "";
-  background: #fff;
-  bottom: -2px;
-  left: -2px;
-  transition: 100ms height ease 0ms;
-  -web-kit-transition: 100ms height ease 0ms;
-}
-.selector-panel:hover:before {
-  width: 450px;
-  transition: 100ms width ease 0ms;
-  -web-kit-transition: 100ms width ease 0ms;
-}
-.selector-panel:hover:after {
-  height: 600px;
-  transition: 100ms height ease 100ms;
-  -web-kit-transition: 100ms height ease 100ms;
-}
-.selector-panel:hover .selector-panel-inner:after {
-  width: 450px;
-  transition: 100ms width ease 200ms;
-  -web-kit-transition: 100ms width ease 200ms;
-}
-.selector-panel:hover .selector-panel-inner:before {
-  height: 600px;
-  transition: 100ms height ease 300ms;
-  -web-kit-transition: 100ms height ease 300ms;
+  .selector-panel:hover .selector-panel-inner:before {
+    height: 80%;
+  }
+  */
 }
