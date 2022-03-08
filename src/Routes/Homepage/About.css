@@ -10,7 +10,7 @@
 .about h2 {
   padding-top: 10px;
   font-size: 25px;
-  color: #d1d5db;
+  color: var(--header-color);
 }
 
 .about .container {

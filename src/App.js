@@ -142,7 +142,7 @@ function App() {
       </div>
 
       <ThemeController />
-      
+
       <Outlet />
     </div>
   );

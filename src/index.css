@@ -8,9 +8,28 @@ noscript {
   padding: 20px;
 }
 
-:root {
+:root,
+:root.dark { /* dark mode is default */
   color-scheme: dark;
+  --absolute-color: black;
+  --bg-color: #111827;
+  --text-color: #d1d5db;
+  --header-color: white;
 }
+
+:root.light {
+  color-scheme: light;
+  --absolute-color: white;
+  --bg-color: white;
+  --text-color: black;
+  --header-color: black;
+}
+
+/*
+background-color: var(--bg-color);
+color: var(--text-color);
+color: var(--header-color);
+*/
 
 .root-container {
   margin: 0;
@@ -52,13 +71,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   height: 100%;
-  background-color: black;
+  background-color: var(--absolute-color);
 }
 
 main {
   z-index: 1;
   background-color: transparent;
-  color: #d1d5db;
+  color: var(--text-color);
   align-items: center;
   padding: 2rem;
   padding-top: 80px;
@@ -69,12 +88,12 @@ main {
 }
 
 h1 {
-  color: white;
+  color: var(--header-color);
 }
 
 h2 {
   font-size: 20px;
-  color: white;
+  color: var(--header-color);
 }
 
 hr {
@@ -121,7 +140,7 @@ hr {
    position: fixed;
    width: 100vw;
    height: 100%;
-   background-color: #111827;
+   background-color: var(--bg-color);
    opacity: 1; /* Main body bg color = black, so making this bg less opaque makes it slightly darker, so the starfield pops more */
  }
 
