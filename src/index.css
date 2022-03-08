@@ -12,23 +12,39 @@ noscript {
 :root.dark { /* dark mode is default */
   color-scheme: dark;
   --absolute-color: black;
+  --opposite-color: white;
   --bg-color: #111827;
+  --bg2-color: #1f2937;
+  --border-color: #374151;
   --text-color: #d1d5db;
   --header-color: white;
+  --navLink-color: #cbd5e1;
+  --navLink-hover-color: #60a5fa;
+  --link-blue-color: #60a5fa;
+  --link-dark-blue-hover-color: #1d4ed8;
 }
 
 :root.light {
   color-scheme: light;
   --absolute-color: white;
-  --bg-color: white;
+  --opposite-color: black;
+  --bg-color: #f1f5f9;
+  --bg2-color: #e2e8f0;
+  --border-color: #cbd5e1;
   --text-color: black;
   --header-color: black;
+  --navLink-color: black;
+  --navLink-hover-color: #1d4ed8;
+  --link-blue-color: #1d4ed8;
+  --link-dark-blue-hover-color: black;
 }
 
 /*
 background-color: var(--bg-color);
 color: var(--text-color);
 color: var(--header-color);
+background-color: var(--bg2-color);
+var(--border-color);
 */
 
 .root-container {
@@ -103,11 +119,11 @@ hr {
 }
 
 .link {
-  color: #60a5fa;
+  color: var(--link-blue-color);
 }
 
 .link:hover {
-  color: #1d4ed8;
+  color: var(--link-dark-blue-hover-color);
 }
 
 .container {

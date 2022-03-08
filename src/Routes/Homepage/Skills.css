@@ -13,8 +13,8 @@
   padding-top: 20px;
   margin-bottom: 25px;
   max-width: 1000px;
-  background-color: #1f2937;
-  border: 2px solid #374151;
+  background-color: var(--bg2-color);
+  border: 2px solid var(--border-color);
 }
 
 .skills-item-subsection {
@@ -43,7 +43,6 @@
 .skills-title {
   display: inline-block;
   font-size: 20px;
-  color: white;
 }
 
 .skills-subheading {

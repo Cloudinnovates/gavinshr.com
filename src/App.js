@@ -112,7 +112,7 @@ function App() {
 
       <div className="navWrapper">
         <nav className="navigation">
-          <h1 className="logo"><HashLink style={{ color: "white", textDecoration: "none" }} smooth to="/#home">Gavin Shrader</HashLink></h1>
+          <h1 className="logo"><HashLink style={{ color: "var(--header-color)", textDecoration: "none" }} smooth to="/#home">Gavin Shrader</HashLink></h1>
 
           <button className="hamburgerButton" onClick={() => {
             setNavListState('navListOpen')
