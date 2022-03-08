@@ -21,6 +21,8 @@ export default function ThemeController() {
       setBgState('theme-controller-hidden')
       setButtonState('toggle-button-shown')
       setPanelState('selector-panel-hidden')
+      document.body.style.overflowY = "scroll"
+
     };
 
     document.addEventListener("mouseup", closeDrawer)
@@ -37,15 +39,16 @@ export default function ThemeController() {
           setBgState('theme-controller-shown')
           setTimeout(function() { setButtonState('toggle-button-hidden') }, 200);
           setPanelState('selector-panel-shown')
+          document.body.style.overflowY = "hidden"
         }}>
           <i className="fa fa-cog"></i>
         </button>
 
         <div ref={selectPanelRef} className={`selector-panel ${panelState}`}>
           <div className="selector-panel-inner center">
-            <div>
+            <div className="selector-panel-title-group">
               <i className="fa fa-cog"></i>
-              <h1 style={{ display: "inline-block" }}>Settings</h1>
+              <h1>Settings</h1>
             </div>
           </div>
         </div>

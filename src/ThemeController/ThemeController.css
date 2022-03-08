@@ -119,13 +119,38 @@
   display: inline-block;
 }
 
+.selector-panel-title-group {
+  position: relative;
+}
+
+.selector-panel-title-group:after {
+  transform: scaleX(0);
+  opacity: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  transition: 500ms ease;
+  background-color: white;
+  content: "";
+}
+
+.selector-panel:hover .selector-panel-title-group:after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+
 /* Hover border animation source: https://codepen.io/mmoonn/pen/PwvraE?editors=0100 */
 .selector-panel:before {
   position: absolute;
   width: 0;
   height: 2px;
   content: "";
-  background: #fff;
+  background: white;
   top: -2px;
   left: -2px;
   transition: 100ms width ease 300ms;
@@ -137,7 +162,7 @@
   width: 2px;
   height: 0;
   content: "";
-  background: #fff;
+  background: white;
   top: -2px;
   right: -2px;
   transition: 100ms height ease 200ms;
@@ -149,7 +174,7 @@
   width: 0;
   height: 2px;
   content: "";
-  background: #fff;
+  background: white;
   bottom: -2px;
   right: -2px;
   transition: 100ms width ease 100ms;
@@ -161,7 +186,7 @@
   width: 2px;
   height: 0;
   content: "";
-  background: #fff;
+  background: white;
   bottom: -2px;
   left: -2px;
   transition: 100ms height ease 0ms;

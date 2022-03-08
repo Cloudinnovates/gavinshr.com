@@ -12,6 +12,7 @@ export default function Resources() {
 
       <p style={{ paddingTop: "15px" }}>These are the great resources & assets that were used to assist in the creation of this site, thank you!</p>
       <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
+        <li><a className="link" href="https://www.kirupa.com" target="_blank" rel="noopener noreferrer">Kirupa.com - Lots Of Great Tutorials</a></li>
         <li><a className="link" href="https://www.freecodecamp.org/news/build-portfolio-website-react/" target="_blank" rel="noopener noreferrer">ReactJS Portfolio Design Inspiration + Tutorial</a></li>
         <li><a className="link" href="https://jfelix.info/blog/create-a-mobile-friendly-navigation-with-react" target="_blank" rel="noopener noreferrer">ReactJS Mobile Friendly Menu Inspiration + Tutorial</a></li>
         <li><a className="link" href="https://www.vecteezy.com/free-vector/astronaut" target="_blank" rel="noopener noreferrer">Astronaut Vectors by Vecteezy</a></li>
