@@ -132,8 +132,6 @@ export default function ThemeController() {
 
               <p>Enable & disable starfield animation:</p>
               <button className="settings-button" onClick={toggleStarfield}>Toggle Starfield</button>
-
-              <p style={{ paddingTop: "25px" }}>More settings coming soon...</p>
             </div>
 
             <button className="exit-button" onClick={() => {
