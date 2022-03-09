@@ -110,7 +110,7 @@ export const skills = [
     urlOpensInNewTab: false,
     urlIsNavLink: false,
     urlIsHashLink: false,
-    moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms. I can setup and navigate a Python development environment and I have experience with several major Python libraries such as PyGame, PyQT, and NumPy.",
+    moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms, and I can setup and navigate a Python development environment on both MacOS & Windows.",
   },
   {
     skill: "Technical Writing & Communication",
