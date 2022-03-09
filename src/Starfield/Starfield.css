@@ -10,7 +10,7 @@
   overflow: hidden;
   perspective: 340px;
 
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
