@@ -1,0 +1,49 @@
+/*
+ * Overall blog container
+ */
+.blog-container {
+  padding-top: 25px;
+}
+
+/*
+ * Individual blog item
+ */
+.blog-item {
+  padding: 20px;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  background-color: var(--bg2-color);
+  border: 2px solid var(--border-color);
+}
+
+.blog-item-subsection {
+  padding-top: 5px;
+}
+
+
+/*
+ * Title with heading & color square
+ */
+.blog-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.blog-color {
+  display: inline-block;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  background-color: white;
+}
+
+.blog-title {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.blog-subheading {
+  font-size: 16px;
+}
