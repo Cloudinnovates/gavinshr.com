@@ -105,9 +105,9 @@ export const skills = [
   {
     skill: "Python",
     color: "#ea580c",
-    url: null,
-    urlName: null,
-    urlOpensInNewTab: false,
+    url: "https://github.com/gshrdr/Learning-Python",
+    urlName: "Python Interactive Demo",
+    urlOpensInNewTab: true,
     urlIsNavLink: false,
     urlIsHashLink: false,
     moreInfo: "I have a junior level understanding of Python. I have used this to build simple GUIs and algorithms, and I can setup and navigate a Python development environment on both MacOS & Windows.",
