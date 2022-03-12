@@ -110,7 +110,7 @@ export const skills = [
     urlOpensInNewTab: true,
     urlIsNavLink: false,
     urlIsHashLink: false,
-    moreInfo: "I learned Python through a college class and I have also used it to build simple scripts, GUIs, and algorithms. I can setup and navigate a Python development environment on both MacOS & Windows. I also have experience with the following tools: PyCharm, Jupyter notebooks, Pandas, NumPy, Matplotlib, PyGame & PyQT.",
+    moreInfo: "I learned Python as a side project, I have used it to build simple scripts, GUIs, and algorithms. I can setup and navigate a Python development environment on both MacOS & Windows. I also have experience with the following tools: PyCharm, Jupyter notebooks, Pandas, NumPy, Matplotlib, PyGame & PyQT.",
   },
   {
     skill: "Technical Writing & Communication",
