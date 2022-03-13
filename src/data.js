@@ -4,15 +4,15 @@
 
 export const skills = [
   {
-    skill: "Swift",
-    subheading: "iOS Applications",
-    color: "#16a34a",
-    url: "https://apps.apple.com/us/developer/gavin-shrader/id1319656496",
-    urlName: "View My Apps",
-    urlOpensInNewTab: true,
+    skill: "Python",
+    subheading: "Scripting & Data Analysis/Manipulation",
+    color: "#FFD700",
+    url: "/projects#python-notebooks-project",
+    urlName: "View Python Interactive Demo Project",
+    urlOpensInNewTab: false,
     urlIsNavLink: false,
-    urlIsHashLink: false,
-    moreInfo: "I taught myself how to build iOS applications through the Swift programming language. I have published several applications to the app store.",
+    urlIsHashLink: true,
+    moreInfo: "I taught myself Python in order to analyze, manipulate, and visualize data, and to build simple scripts, GUIs, and algorithms. I can setup and navigate a Python development environment on both MacOS & Windows, and I have experience with the following tools: PyCharm, Jupyter notebooks, Pandas, NumPy, Matplotlib, PyGame & PyQT.",
   },
   {
     skill: "HTML5",
@@ -92,6 +92,17 @@ export const skills = [
     moreInfo: "I am capable of using MySQL to setup database systems for a basic back-end.",
   },
   {
+    skill: "Swift",
+    subheading: "iOS Applications",
+    color: "#16a34a",
+    url: "https://apps.apple.com/us/developer/gavin-shrader/id1319656496",
+    urlName: "View My Apps",
+    urlOpensInNewTab: true,
+    urlIsNavLink: false,
+    urlIsHashLink: false,
+    moreInfo: "I taught myself how to build iOS applications through the Swift programming language. I have published several applications to the app store. (I originally had four apps, two of these have since been deprecated/removed)",
+  },
+  {
     skill: "Git/GitHub",
     subheading: "Version Control",
     color: "#e11d48",
@@ -101,16 +112,6 @@ export const skills = [
     urlIsNavLink: false,
     urlIsHashLink: false,
     moreInfo: "I use Git for version control and I use GitHub to store my Git repositories on the cloud to showcase my projects.",
-  },
-  {
-    skill: "Python",
-    color: "#ea580c",
-    url: "https://github.com/gshrdr/Learning-Python",
-    urlName: "Python Interactive Demo",
-    urlOpensInNewTab: true,
-    urlIsNavLink: false,
-    urlIsHashLink: false,
-    moreInfo: "I learned Python as a side project, I have used it to build simple scripts, GUIs, and algorithms. I can setup and navigate a Python development environment on both MacOS & Windows. I also have experience with the following tools: PyCharm, Jupyter notebooks, Pandas, NumPy, Matplotlib, PyGame & PyQT.",
   },
   {
     skill: "Technical Writing & Communication",

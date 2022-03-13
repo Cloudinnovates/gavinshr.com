@@ -9,7 +9,7 @@
   width: 100%;
   overflow: hidden;
   perspective: 340px;
-  opacity: 1;
+  opacity: 0.85;
 
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
@@ -21,7 +21,7 @@
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: 0.85;
     }
 }
 
