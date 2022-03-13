@@ -24,7 +24,8 @@ export default function Starfield() {
 
   return (
     <div className={`stars-container ${starfieldState}`} id="starfield">
-      <div id="stars" className="stars"></div>
+      <div id="stars" className="stars1"></div>
+      <div id="stars" className="stars2"></div>
     </div>
   );
 }
