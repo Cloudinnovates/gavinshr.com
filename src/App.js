@@ -80,11 +80,14 @@ function App() {
 
     function updateStarfieldAnimation() {
       if (debugBackSwipeAnimation) { console.log("Attempt to update starfield animation."); }
-      var starfield = document.getElementById('stars')
-      if (starfield !== null && starfieldBlockState === false && recentSwipeBackState === true) {
+      var starfield1 = document.getElementById('stars1')
+      var starfield2 = document.getElementById('stars2')
+      if (starfield1 !== null && starfield2 !== null && starfieldBlockState === false && recentSwipeBackState === true) {
         if (debugBackSwipeAnimation) { console.log(">>>>>> Restart starfield animation. <<<<<<"); }
-        const clone = starfield.cloneNode(true)
-        starfield.parentNode.replaceChild(clone, starfield)
+        const clone1 = starfield1.cloneNode(true)
+        starfield1.parentNode.replaceChild(clone1, starfield1)
+        const clone2 = starfield2.cloneNode(true)
+        starfield2.parentNode.replaceChild(clone2, starfield2)
         setRecentSwipeBackState(false)
       }
       setStarfieldBlockState(false)
