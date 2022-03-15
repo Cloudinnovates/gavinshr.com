@@ -12,9 +12,11 @@
   perspective: 350px;
   opacity: 1;
 
+  /* Start starfield @ 0 opacity and slowly fade in upon page load... temporarily disabling to see if this is what's causing a screen flickering glitch?
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  */
 }
 
 @keyframes fadeInAnimation {
