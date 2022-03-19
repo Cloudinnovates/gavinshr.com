@@ -63,6 +63,30 @@ export default function Projects() {
           </div>
         </section>
 
+        <section id="medium-tutorial-project">
+          <hr/>
+          <br/>
+          <div style={{ paddingBottom: "2rem" }}>
+            <h2>Medium Tutorial Website</h2>
+            <h3><i>Custom Built HTML/CSS/JavaScript Website With Medium Tutorial</i></h3>
+            <br/>
+            <div className="project-image-container">
+              <img
+                className="project-image"
+                src={require("./DemoImages/MediumTutorialDemo.png")}
+                alt="Medium Tutorial Website Screenshot"
+              />
+            </div>
+            <br/>
+            <p style={{ paddingTop: "15px" }}>This custom built portfolio website was made with a medium.com article that teaches you how to code + deploy your own website from scratch. The following links will lead you to this project's GitHub page, the medium.com tutorial article, and a live demo of this website's code in action.</p>
+            <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
+              <li><a className="link" href="https://gavinshr.com">Read Medium Tutorial Article (Not Published Yet, Work In Progress - Link Not Active)</a></li>
+              <li><a className="link" href="/Medium-Tutorial-Website/index.html" target="_blank" rel="noopener noreferrer">Live Website Code Demo</a></li>
+              <li><a className="link" href="https://github.com/gshrdr/Medium-Tutorial-Website" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a></li>
+            </ul>
+          </div>
+        </section>
+
         <section id="maze-project">
           <hr/>
           <br/>
@@ -101,7 +125,7 @@ export default function Projects() {
               />
             </div>
             <br/>
-            <p style={{ paddingTop: "15px" }}>These are a few simple projects that I built using the excellent resources at: <a className="link" href="https://discoverthreejs.com" target="_blank" rel="noopener noreferrer">DiscoverThreeJS.com</a>. For now I have a basic understanding of setting up an environment and rendering 3D graphics in a browser. In the future I plan on extending this knowledge with the goal of developing a full 3D simulation and/or game.</p>
+            <p style={{ paddingTop: "15px" }}>These are a few simple projects that I built using the excellent resources at: <a className="link" href="https://discoverthreejs.com" target="_blank" rel="noopener noreferrer">DiscoverThreeJS.com</a>. For now I have a basic understanding of setting up an environment and rendering 3D graphics in a browser. In the future I plan on continuing this knowledge with the goal of being able to manipulate 3D graphics and generate visual artwork in more than 2 dimensions.</p>
             <div style={{ paddingTop: "15px" }}>
               <ul style={{ paddingLeft: "15px", paddingRight: "15px" }}>
                 <li><a className="link" href="/3D-Test/index.html">3D Test #1 - Cube</a></li>
@@ -137,6 +161,7 @@ export default function Projects() {
             </div>
             <br/>
             <p style={{ paddingTop: "15px" }}>This project is a PHP & MySQL database demo. I built this project primarily using <a className="link" href="https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database">this</a> tutorial. This project showcases my knowledge of how to create a database programmatically and update, read, and delete individual items in that database using code. I followed this tutorial in order to begin building a Blog from scratch using PHP/MySQL, but after completing the tutorial I opted to use Medium for a simpler approach (and in the future I will eventually upgrade to a Ghost CMS + Node.JS system).</p>
+            <p style={{ paddingTop: "15px" }}>Unlike my other projects, I don't have a live demo of this code since the majority of this project came from a tutorial. The most interesting code from this project is the custom config.php file I built that initializes a database + loads it full of tables automatically: <a className="link" href="https://github.com/gshrdr/PHP-SQL-Blog/blob/main/config.php" target="_blank" rel="noopener noreferrer">config.php</a>.</p>
             <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
               <li><a className="link" href="https://github.com/gshrdr/PHP-SQL-Blog" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a></li>
             </ul>

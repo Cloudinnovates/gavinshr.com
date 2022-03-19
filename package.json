@@ -26,6 +26,7 @@
   "reactSnap": {
     "exclude": [
       "/MazeAlgorithm/*",
+      "/Medium-Tutorial-Website/*",
       "/3D-Test/*",
       "/3D-Test-2-Orbital/*",
       "/3D-Test-3-Spheres/*",
