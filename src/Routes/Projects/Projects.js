@@ -29,13 +29,13 @@ export default function Projects() {
             <p style={{ paddingTop: "15px" }}>I put together a GitHub repository of Jupyter Notebooks (.ipynb files that allow you to run Python code in a browser editor) - I then hosted these notebook files on a Binder instance so that people can open the notebooks directly in a browser, without needing to install a local copy of the software. These Jupyter Notebooks demonstrate the basic concepts of Python data engineering such as data structures, algorithms, time complexity, and 3 of the most basic data science libraries: NumPy, Pandas, and Matplotlib.</p>
             <p style={{ paddingTop: "15px" }}>This series of notebooks contains around 10,000 words worth of information on the key knowledge used in Python data engineering.</p>
             <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
-              <li><a className="link" href="https://github.com/gshrdr/Learning-Python" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a></li>
-            </ul>
-            <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
               <li><a className="link" href="https://mybinder.org/v2/gh/gshrdr/Learning-Python/HEAD?labpath=notebooks%2FStructs-Algos-Complexity-Demo.ipynb" target="_blank" rel="noopener noreferrer">Launch Demo #1 - Data Structures, Algorithms, and Time Complexity</a></li>
               <li><a className="link" href="https://mybinder.org/v2/gh/gshrdr/Learning-Python/HEAD?labpath=notebooks%2FGeneral-Data-Engineering.ipynb" target="_blank" rel="noopener noreferrer">Launch Demo #2 - Databases + General Data Engineering Concepts</a></li>
               <li><a className="link" href="https://mybinder.org/v2/gh/gshrdr/Learning-Python/HEAD?labpath=notebooks%2FMatplotlib-Numpy-Demo.ipynb" target="_blank" rel="noopener noreferrer">Launch Demo #3 - NumPy & Matplotlib Data Visualization Library Demo</a></li>
               <li><a className="link" href="https://mybinder.org/v2/gh/gshrdr/Learning-Python/HEAD?labpath=notebooks%2FPandas-Demo.ipynb" target="_blank" rel="noopener noreferrer">Launch Demo #4 - Pandas Data Manipulation Library Demo</a></li>
+            </ul>
+            <ul style={{ paddingTop: "15px", paddingLeft: "15px", paddingRight: "15px" }}>
+              <li><a className="link" href="https://github.com/gshrdr/Learning-Python" target="_blank" rel="noopener noreferrer">GitHub Source &rarr;</a></li>
             </ul>
           </div>
         </section>
