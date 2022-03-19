@@ -40,7 +40,10 @@
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--navLink-color);
-    transition:color .15s ease-in-out
+    transition: color .15s ease-in-out;
+    border: none;
+    background: transparent;
+    outline: none;
  }
 
 .navLink:after {
