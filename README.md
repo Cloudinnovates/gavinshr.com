@@ -63,7 +63,6 @@ I personally use BlueHost for my hosting & CyberDuck for my FTP connection to th
 - [x] Theme + settings control panel to allow the user to switch between light & dark mode + additional settings
 - [ ] Blog + technical writing content
 - [ ] Accessibility improvements
-- [ ] Performance enhancements (Three.JS minification + general code minification)
+- [ ] Performance enhancements (Three.JS minification + general code minification + shrink image sizes)
 - [ ] Analytics + page view statistics
 - [ ] Cleaner code; organize App.js & other larger files into smaller modules
-- [ ] Side Project #2 - JavaScript evolution simulator with HTML5 canvas, camera, game loop, entity system, user input, & local state storage
