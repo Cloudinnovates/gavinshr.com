@@ -50,12 +50,15 @@ var(--border-color);
 .root-container {
   margin: 0;
   height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 .main-screen-fill {
   margin: 0;
   height: 100%;
   min-height: 100%;
+  position: relative;
 }
 
 *,
@@ -86,7 +89,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   margin: 0;
-  height: 100%;
+  padding: 0;
+  height: 100vh;
   background-color: var(--absolute-color);
 }
 

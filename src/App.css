@@ -43,6 +43,8 @@
     transition: color .15s ease-in-out;
     background-color: transparent;
     outline: none;
+    
+    -webkit-tap-highlight-color: transparent;
  }
 
 .navLink:after {

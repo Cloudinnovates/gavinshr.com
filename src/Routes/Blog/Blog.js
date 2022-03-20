@@ -55,8 +55,6 @@ export default function Blog() {
             </div>
           ))}
         </div>
-
-        <div style={{ width: "100%", height: "600px" }}/>
       </div>
     </main>
   );
