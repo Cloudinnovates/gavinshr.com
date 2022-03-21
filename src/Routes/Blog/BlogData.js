@@ -7,6 +7,7 @@ export const posts = [
     skill: "Post 1",
     subheading: "Temporary Testing Data",
     color: "#16a34a",
+    imageUrl: "../Projects/DemoImages/MediumTutorialDemo.png",
     url: "",
     urlName: "Read Blog Post",
     urlOpensInNewTab: true,

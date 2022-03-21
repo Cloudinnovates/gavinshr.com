@@ -47,3 +47,33 @@
 .blog-subheading {
   font-size: 16px;
 }
+
+/*
+ * Image
+ */
+
+.blog-image-container {
+  padding-top: 12px;
+}
+
+.blog-image {
+  border: 2px solid #9ca3af;
+  width: 426px;
+  height: 193px;
+}
+
+/* Shrink image for tiny screen sizes */
+@media only screen and (max-width: 500px) {
+  .blog-image {
+    width: 320px;
+    height: 145px;
+  }
+}
+
+/* Shrink image for tinier screen sizes */
+@media only screen and (max-width: 320px) {
+  .blog-image {
+    width: 160px;
+    height: 72px;
+  }
+}

@@ -29,6 +29,18 @@ export default function Blog() {
               </span>
 
               <span>
+              <div className="blog-image-container">
+                <img
+                  className="blog-image"
+                  src={require("../Projects/DemoImages/MediumTutorialDemo.png")}
+                  alt="Python Jupyter Notebook Demo"
+                />
+              </div>
+              </span>
+
+              { /* post.imageUrl */ }
+
+              <span>
                 {
                   post.moreInfo == null ? <br/> :
                   <p className="blog-item-subsection">{post.moreInfo}</p>
