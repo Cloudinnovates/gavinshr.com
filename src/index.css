@@ -13,8 +13,8 @@ noscript {
   color-scheme: dark;
   --absolute-color: black;
   --opposite-color: white;
-  --bg-color: #111827;
-  --bg2-color: #1f2937;
+  --bg-color: rgb(6, 10, 21); /* #111827; */
+  --bg2-color: #0f172a; /* #1f2937; */
   --border-color: #374151;
   --text-color: #d1d5db;
   --header-color: white;
