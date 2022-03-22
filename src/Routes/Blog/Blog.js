@@ -16,7 +16,6 @@ export default function Blog() {
         <hr/>
         <br/>
         <h2>Most Recent Posts</h2>
-        <h3><i>Work In Progress</i></h3>
         <div className="blog-container">
           {posts.map((post) => (
             <div key={post.uniqueKey} className="blog-item">
