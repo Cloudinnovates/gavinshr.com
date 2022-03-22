@@ -36,9 +36,6 @@ export default function Blog() {
               </div>
               </span>
 
-              { /* post.imageUrl
-                "../Projects/DemoImages/MediumTutorialDemo.png"*/ }
-
               <span>
                 {post.moreInfo.map((moreInfoItem) => (
                   <p key={moreInfoItem} className="blog-item-subsection">{moreInfoItem}</p>
