@@ -10,7 +10,7 @@ export const posts = [
     color: "#16a34a",
     imageUrlName: "MediumTutorialDemo.png",
     moreInfo: [
-      "This article walks you through how to setup a local development environment, how to build a website using HTML5, CSS3, and JavaScript, and how to publish this website on your own domain name.",
+      "This article walks you through how to setup a local development environment, how to build a website using HTML5, CSS3, and JavaScript, and then how to publish this website on your own domain name.",
       "The following links contain a code demo of the project you will build, a GitHub repository with the source code, and the article itself, currently published on Medium.",
       "This article is a work in progress and will be published during April."
     ],
@@ -34,7 +34,7 @@ export const posts = [
       {
         uniqueKey: "Read-Post",
         url: "",
-        urlName: "Read Blog Post (Link Not Active - Post Not Published Yet)",
+        urlName: "Read Article (Link Not Active - Post Not Published Yet)",
         urlOpensInNewTab: true,
         urlIsNavLink: false,
         urlIsHashLink: false,

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.acd51b26.css",
-    "main.js": "/static/js/main.92517b40.js",
+    "main.js": "/static/js/main.79675915.js",
     "static/media/MediumTutorialDemo.png": "/static/media/MediumTutorialDemo.2ff0e9ff12d852479b43.png",
     "static/media/PortfolioDemo.png": "/static/media/PortfolioDemo.d78e57db51a8e407f8a8.png",
     "static/media/PHP_Demo.png": "/static/media/PHP_Demo.4332aefb662b377dfbc1.png",
@@ -11,10 +11,10 @@
     "static/media/MazeDemo.png": "/static/media/MazeDemo.816982ec5de5df0a1080.png",
     "index.html": "/index.html",
     "main.acd51b26.css.map": "/static/css/main.acd51b26.css.map",
-    "main.92517b40.js.map": "/static/js/main.92517b40.js.map"
+    "main.79675915.js.map": "/static/js/main.79675915.js.map"
   },
   "entrypoints": [
     "static/css/main.acd51b26.css",
-    "static/js/main.92517b40.js"
+    "static/js/main.79675915.js"
   ]
 }
