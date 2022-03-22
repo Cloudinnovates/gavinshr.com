@@ -16,7 +16,6 @@ export default function Resources() {
           <li><a className="link" href="https://www.freecodecamp.org/news/build-portfolio-website-react/" target="_blank" rel="noopener noreferrer">ReactJS Portfolio Design Inspiration + Tutorial</a></li>
           <li><a className="link" href="https://jfelix.info/blog/create-a-mobile-friendly-navigation-with-react" target="_blank" rel="noopener noreferrer">ReactJS Mobile Friendly Menu Inspiration + Tutorial</a></li>
           <li><a className="link" href="https://www.vecteezy.com/free-vector/astronaut" target="_blank" rel="noopener noreferrer">Astronaut Vectors by Vecteezy</a></li>
-          <li><a className="link" href="https://www.vecteezy.com/free-vector/404" target="_blank" rel="noopener noreferrer">404 Vectors by Vecteezy</a></li>
           <li><a className="link" href="https://codepen.io/keithclark/pen/ibEnk" target="_blank" rel="noopener noreferrer">CSS Starfield Animation</a></li>
           <li><a className="link" href="https://fontawesome.com/v4.7/icons/" target="_blank" rel="noopener noreferrer">Font-Awesome Icon Pack</a></li>
           <li><a className="link" href="https://tailwindcss.com/docs/customizing-colors" target="_blank" rel="noopener noreferrer">Tailwind CSS Color Schemes</a></li>

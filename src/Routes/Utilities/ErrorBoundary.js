@@ -25,7 +25,8 @@ class ErrorBoundary extends Component {
       return (
         <div className="center" style={{ paddingTop: "50px" }}>
           <h1>An Error Occured</h1>
-          <p>Please refresh the page.</p>
+          <p style={{ paddingTop: "15px" }}>Please refresh the page or go to the homepage.</p>
+          <a className="link" style={{ paddingTop: "15px" }} href="/">&larr; Homepage</a>
         </div>
       );
     }

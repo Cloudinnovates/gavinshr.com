@@ -19,11 +19,10 @@ export default function Blog() {
         <h3><i>Work In Progress</i></h3>
         <div className="blog-container">
           {posts.map((post) => (
-            <div key={post.skill} className="blog-item">
+            <div key={post.uniqueKey} className="blog-item">
               <span>
                 <div className="blog-title-container">
-                  <div style={{ backgroundColor: post.color }} className="skills-color"></div>
-                  <h2 className="skills-title">{post.skill}</h2>
+                  <h2 className="skills-title">{post.title}</h2>
                 </div>
                 <h3 className="blog-subheading"><i>{post.subheading}</i></h3>
               </span>
@@ -32,37 +31,39 @@ export default function Blog() {
               <div className="blog-image-container">
                 <img
                   className="blog-image"
-                  src={require("../Projects/DemoImages/MediumTutorialDemo.png")}
+                  src={require('../Projects/DemoImages/' + post.imageUrlName)}
                   alt="Python Jupyter Notebook Demo"
                 />
               </div>
               </span>
 
-              { /* post.imageUrl */ }
+              { /* post.imageUrl
+                "../Projects/DemoImages/MediumTutorialDemo.png"*/ }
 
               <span>
-                {
-                  post.moreInfo == null ? <br/> :
-                  <p className="blog-item-subsection">{post.moreInfo}</p>
-                }
+                {post.moreInfo.map((moreInfoItem) => (
+                  <p key={moreInfoItem} className="blog-item-subsection">{moreInfoItem}</p>
+                ))}
               </span>
               <span>
-                <div className="blog-item-subsection">
+              {post.urls.map((urlEntity) => (
+                <div key={urlEntity.uniqueKey} className="blog-item-subsection">
                 {
-                  post.url == null ? ""
+                  urlEntity.url == null ? ""
                   :
-                    post.urlIsNavLink === true ?
-                      <NavLink className="link" to={post.url}>{post.urlName}</NavLink>
+                    urlEntity.urlIsNavLink === true ?
+                      <NavLink className="link" to={urlEntity.url}>{urlEntity.urlName}</NavLink>
                       :
-                        post.urlIsHashLink === true ?
-                          <HashLink className="link" to={post.url}>{post.urlName}</HashLink>
+                        urlEntity.urlIsHashLink === true ?
+                          <HashLink className="link" to={urlEntity.url}>{urlEntity.urlName}</HashLink>
                           :
-                          post.urlOpensInNewTab === true ?
-                            <a className="link" href={post.url} target="_blank" rel="noopener noreferrer">{post.urlName}</a>
+                          urlEntity.urlOpensInNewTab === true ?
+                            <a className="link" href={urlEntity.url} target="_blank" rel="noopener noreferrer">{urlEntity.urlName}</a>
                             :
-                            <a className="link" href={post.url}>{post.urlName}</a>
+                            <a className="link" href={urlEntity.url}>{urlEntity.urlName}</a>
                 }
                 </div>
+              ))}
               </span>
             </div>
           ))}
