@@ -7,6 +7,7 @@ export const posts = [
     uniqueKey: "How-To-Code-And-Publish-Your-First-Website",
     title: "How To Code And Publish Your First Website In 2022 With No Prior Experience",
     subheading: "Building An Online Portfolio Using HTML5, CSS3 & JavaScript",
+    publishedDate: "Published: 00/00/0000",
     color: "#16a34a",
     imageUrlName: "MediumTutorialDemo.png",
     moreInfo: [

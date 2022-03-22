@@ -24,6 +24,7 @@ export default function Blog() {
                   <h2 className="skills-title">{post.title}</h2>
                 </div>
                 <h3 className="blog-subheading"><i>{post.subheading}</i></h3>
+                <h4 className="blog-date">{post.publishedDate}</h4>
               </span>
 
               <span>
