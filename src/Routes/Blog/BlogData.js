@@ -25,7 +25,7 @@ export const posts = [
       },
       {
         uniqueKey: "Code-Demo",
-        url: "https://gavinshr.com/Medium-Tutorial-Website/index.html",
+        url: "/Medium-Tutorial-Website/index.html",
         urlName: "View Code Demo",
         urlOpensInNewTab: true,
         urlIsNavLink: false,

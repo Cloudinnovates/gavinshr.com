@@ -42,8 +42,9 @@ export default function Blog() {
                 ))}
               </span>
               <span>
+              <div className="blog-link-container">
               {post.urls.map((urlEntity) => (
-                <div key={urlEntity.uniqueKey} className="blog-item-subsection">
+                <div key={urlEntity.uniqueKey} className="blog-link-subsection">
                 {
                   urlEntity.url == null ? ""
                   :
@@ -60,6 +61,7 @@ export default function Blog() {
                 }
                 </div>
               ))}
+              </div>
               </span>
             </div>
           ))}

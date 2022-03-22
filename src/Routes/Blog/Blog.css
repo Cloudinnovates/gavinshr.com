@@ -17,9 +17,16 @@
 }
 
 .blog-item-subsection {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
+.blog-link-container {
+  padding-top: 10px;
+}
+
+.blog-link-subsection {
+  padding-top: 5px;
+}
 
 /*
  * Title with heading & color square
@@ -43,7 +50,7 @@
  */
 
 .blog-image-container {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .blog-image {
